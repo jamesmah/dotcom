@@ -1,0 +1,1 @@
+{"version":3,"sources":["content/blogPosts/HelloWorld/Excerpt.tsx"],"names":["Excerpt"],"mappings":"mHAOeA,UAPC,kBACd","file":"static/js/9.1799e930.chunk.js","sourcesContent":["const Excerpt = () => (\n  <>\n    Welcome to the first post in my website blog. Hope to see you again in the\n    future.\n  </>\n)\n\nexport default Excerpt\n"],"sourceRoot":""}
