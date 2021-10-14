@@ -1,0 +1,32 @@
+$aos-distance: 16px;
+@import "~aos/src/sass/aos.scss";
+
+/**
+ * Fade & Slide animations
+ */
+
+[data-aos^="fade-slide"][data-aos^="fade-slide"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-aos="fade-slide-up"] {
+  transform: translate3d(0, 160px, 0);
+}
+
+[data-aos="fade-slide-down"] {
+  transform: translate3d(0, -160px, 0);
+}
+
+[data-aos="fade-slide-right"] {
+  transform: translate3d(-160px, 0, 0);
+}
+
+[data-aos="fade-slide-left"] {
+  transform: translate3d(160px, 0, 0);
+}
