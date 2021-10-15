@@ -17,14 +17,14 @@ const Hamburger = ({
       isActive && `is-active`,
       props.className
     )}
-    type="button"
+    type={`button`}
     css={`
       padding: 0.5rem;
       margin: -0.5rem;
     `}
   >
-    <span className="hamburger-box">
-      <span className="hamburger-inner"></span>
+    <span className={`hamburger-box`}>
+      <span className={`hamburger-inner`}></span>
     </span>
   </button>
 )

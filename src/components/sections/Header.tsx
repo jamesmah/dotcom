@@ -36,7 +36,7 @@ const Header = () => {
           `}
         >
           <Container
-            data-aos="fade"
+            data-aos={`fade`}
             css={`
               display: flex;
               justify-content: space-between;
@@ -45,22 +45,24 @@ const Header = () => {
             `}
           >
             <Link
-              to="/"
+              to={`/#top`}
               css={`
                 padding: 0.5rem;
                 margin: -0.5rem;
               `}
             >
-              <img src="/logo.png" alt="JM" width={32} height={32} />
+              <img src={`/logo.png`} alt={`JM`} width={32} height={32} />
             </Link>
+
             <Hamburger toggleIsActive={toggleIsActive} isActive={isActive} />
           </Container>
         </div>
       </header>
       {isActive && (
         <nav
-          data-aos="fade-down"
-          data-aos-duration="300"
+          onClick={toggleIsActive}
+          data-aos={`fade-down`}
+          data-aos-duration={`300`}
           css={css`
             position: fixed;
             top: 0;
@@ -77,25 +79,22 @@ const Header = () => {
           `}
         >
           <Stack
-            gap="1rem"
+            gap={`0.5rem`}
             css={`
               text-align: center;
               padding-bottom: 4rem;
             `}
           >
             <div>Links</div>
-            <Stack as="ul" gap="1rem" className="list-reset">
+            <Stack as={`ul`} className={`list-reset`}>
               <li>
-                <StyledLink to="/">Home</StyledLink>
+                <StyledLink to={`/blog#top`}>Blog</StyledLink>
               </li>
               <li>
-                <StyledLink to="/blog">Blog</StyledLink>
+                <StyledLink to={`/about#top`}>About</StyledLink>
               </li>
               <li>
-                <StyledLink to="/about">About</StyledLink>
-              </li>
-              <li>
-                <StyledLink to="/credits">Credits</StyledLink>
+                <StyledLink to={`/credits#top`}>Credits</StyledLink>
               </li>
             </Stack>
           </Stack>
@@ -107,6 +106,8 @@ const Header = () => {
 
 const StyledLink = styled(Link)`
   font-size: 1.5rem;
+  display: block;
+  padding: 0.5rem;
 `
 
 export default Header

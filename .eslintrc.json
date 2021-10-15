@@ -24,8 +24,16 @@
         }
       }
     ],
+    "jsx-a11y/alt-text": "off",
     "no-console": ["warn"],
     "react-hooks/exhaustive-deps": "off",
+    "react/jsx-curly-brace-presence": [
+      "warn",
+      {
+        "children": "never",
+        "props": "always"
+      }
+    ],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "sort-imports": [

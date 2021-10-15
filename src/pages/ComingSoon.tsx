@@ -9,9 +9,10 @@ const ComingSoon = () => {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding-bottom: 5rem;
       `}
     >
-      <h1 data-aos="fade-up">Coming Soon...</h1>
+      <h1 data-aos={`fade-up`}>Coming Soon...</h1>
     </Container>
   )
 }

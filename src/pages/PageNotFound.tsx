@@ -10,7 +10,7 @@ const PageNotFound = () => {
         justify-content: center;
         text-align: center;
       `}
-      data-aos="fade-up"
+      data-aos={`fade-up`}
     >
       <h1>404</h1>
       <p>Page not found</p>
