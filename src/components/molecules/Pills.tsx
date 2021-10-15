@@ -1,13 +1,13 @@
 import { css } from "styled-components"
 import Stack from "../elements/Stack"
 
-const TagPills = ({ tags, ...props }: { tags: string[] }) => {
+const TagPills = ({ items, ...props }: { items: string[] }) => {
   return (
     <Stack direction={`row`} gap={`1rem`}>
-      {tags.map((tag, index, array) => (
+      {items.map((item, index, array) => (
         <div
           {...props}
-          key={tag}
+          key={index}
           data-aos={`fade`}
           data-aos-delay={(array.length - index - 1) * 100}
           css={css`
@@ -19,7 +19,7 @@ const TagPills = ({ tags, ...props }: { tags: string[] }) => {
             font-weight: 600;
           `}
         >
-          {tag}
+          {item}
         </div>
       ))}
     </Stack>

@@ -3,8 +3,7 @@ import { RouteComponentProps } from "react-router"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import BackHeader from "../components/molecules/BackHeader"
-import TagPills from "../components/molecules/TagPills"
-import Footer from "../components/sections/Footer"
+import TagPills from "../components/molecules/Pills"
 import allArticles from "../content/allArticles"
 import PageNotFound from "./PageNotFound"
 
@@ -25,7 +24,7 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
             `}
           >
             <div data-aos={`fade`}>{data.timeStamp.toDateString()}</div>
-            <TagPills tags={data.tags} />
+            {data.category && <TagPills items={[data.category]} />}
           </div>
           {data.title && <h3 data-aos={`fade`}>{data.title}</h3>}
 
@@ -33,8 +32,12 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
             <Page />
           </Suspense>
         </Stack>
+        <div
+          css={`
+            padding-bottom: 4rem;
+          `}
+        />
       </Container>
-      <Footer width={`md`} />
     </>
   )
 }

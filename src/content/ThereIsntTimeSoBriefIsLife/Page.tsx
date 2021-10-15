@@ -39,15 +39,16 @@ const Page = () => (
       happiest people are the ones who actively work towards building new
       relationships as they move towards different stages in their lives.
     </p>
-    <p>
-      At the end of the talk, Robert closes with a beautiful quote by Mark
-      Twain,
-    </p>
+    <p>At the end of the talk, Robert closes with a beautiful quote:</p>
     <blockquote data-aos={`fade-right`}>
-      <q>{data.quote}</q>
+      <q>{data.quote}</q> - Mark Twain
     </blockquote>
     <p>Click below to watch the full video:</p>
-    <a href={`https://youtu.be/8KkKuTCFvzI`}>
+    <a
+      href={`https://youtu.be/8KkKuTCFvzI`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
       🔗 Robert Waldinger: What makes a good life? Lessons from the longest
       study on happiness | TED
     </a>

@@ -6,7 +6,6 @@ const data: ArticleData = {
   slug: `hello-world`,
   timeStamp: new Date(`2021-10-12T11:05:17.766Z`),
   title: `Hello World!`,
-  tags: [],
   image,
   excerpt: (
     <>

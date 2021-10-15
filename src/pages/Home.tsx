@@ -9,7 +9,7 @@ const Home = () => {
     <Container>
       <Stack gap={`2rem`}>
         {allArticles
-          .filter((article) => !article.draft && article.tags.includes(`Quote`))
+          .filter((article) => !article.draft && article.category === `Quote`)
           .map((quote, index) => (
             <Quote
               key={quote.slug}
@@ -25,7 +25,7 @@ const Home = () => {
         `}
       >
         <Link
-          to={`blog#top`}
+          to={`/blog#top`}
           data-aos={`fade-right`}
           data-aos-offset={0}
           css={`

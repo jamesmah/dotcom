@@ -12,7 +12,7 @@ const data: ArticleData = {
       you want. Set it up so it’s the best day you could have
     </>
   ),
-  tags: [`Quote`],
+  category: `Quote`,
   image,
   Page: lazy(() => import(`./Page`)),
 }

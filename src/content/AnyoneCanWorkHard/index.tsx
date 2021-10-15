@@ -12,7 +12,7 @@ const data: ArticleData = {
       going when work isn’t exciting that makes the difference
     </>
   ),
-  tags: [`Quote`],
+  category: `Quote`,
   image,
   Page: lazy(() => import(`./Page`)),
 }

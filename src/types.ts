@@ -1,7 +1,13 @@
 import React, { LazyExoticComponent } from "react"
 
-export const tags = [`Tech`, `Quote`] as const
-export type Tag = typeof tags[number]
+export const categories = [`Tech`, `Quote`] as const
+export type Category = typeof categories[number]
+
+export const categoryTitles: Record<string, string | undefined> = {
+  Dev: `Software Development`,
+  Motivation: `Motivation`,
+  Quote: `Quotes`,
+}
 
 export interface ArticleData {
   draft?: boolean
@@ -9,7 +15,7 @@ export interface ArticleData {
   timeStamp: Date
   title?: React.ReactNode
   quote?: React.ReactNode
-  tags: Tag[]
+  category?: Category
   image: string
   excerpt?: React.ReactNode
   Page: LazyExoticComponent<() => JSX.Element>

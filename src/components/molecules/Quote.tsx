@@ -89,7 +89,7 @@ const Quote = ({
                 `}
               >
                 <Link
-                  to={`article/${data.slug}`}
+                  to={`/article/${data.slug}`}
                   css={css`
                     padding: 1rem;
                     ${`margin-${textAlign}`}: -0.5rem;

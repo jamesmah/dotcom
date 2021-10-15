@@ -12,7 +12,7 @@ const data: ArticleData = {
       an instant, so to speak, for that.
     </>
   ),
-  tags: [`Quote`],
+  category: `Quote`,
   image,
   Page: lazy(() => import(`./Page`)),
 }
