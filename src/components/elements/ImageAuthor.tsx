@@ -13,7 +13,7 @@ const ImageAuthor = ({
 }) => {
   return (
     <div>
-      <Image src={image} data-aos={`fade`} />
+      <Image src={image} />
       <div data-aos={`fade-left`} data-aos-offset={0}>
         Photo by
         {` `}

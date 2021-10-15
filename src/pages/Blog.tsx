@@ -15,8 +15,7 @@ const Blog = ({ location }: RouteComponentProps) => {
     arrayFormat: `comma`,
   })
 
-  const showDrafts = parsed.draft || parsed.draft === null
-  const tagsFilter =
+  const filteredTags =
     typeof parsed.tags === `string` ? [parsed.tags] : parsed.tags
 
   return (
@@ -30,18 +29,18 @@ const Blog = ({ location }: RouteComponentProps) => {
         <Stack gap={`5rem`}>
           <Stack gap={`1rem`}>
             <h1 data-aos={`fade`}>
-              {tagsFilter ? tagsFilter.join(`, `) : `All Articles`}
+              {filteredTags ? filteredTags.join(`, `) : `All Articles`}
             </h1>
 
             <div
               css={css`
                 display: flex;
                 gap: 1rem;
-                color: ${({ theme }) => theme.palette.light[2]};
+                color: ${({ theme }) => theme.palette.light[3]};
                 flex-wrap: wrap;
 
                 > a {
-                  color: ${({ theme }) => theme.palette.light[3]};
+                  color: inherit;
 
                   &:hover {
                     color: ${({ theme }) => theme.palette.light[2]};
@@ -54,7 +53,7 @@ const Blog = ({ location }: RouteComponentProps) => {
               `}
             >
               <Link
-                className={!tagsFilter ? `active` : undefined}
+                className={filteredTags ? undefined : `active`}
                 to={queryString.stringifyUrl(
                   {
                     url: location.pathname,
@@ -68,114 +67,123 @@ const Blog = ({ location }: RouteComponentProps) => {
               >
                 All
               </Link>
-              {tags.map((tag, index) => (
-                <Fragment key={tag}>
-                  <div
-                    data-aos={`fade-left`}
-                    data-aos-delay={(index * 2 + 1) * 50}
-                  >
-                    |
-                  </div>
-                  <Link
-                    data-aos={`fade-left`}
-                    data-aos-delay={(index + 1) * 2 * 50}
-                    className={tagsFilter?.includes(tag) ? `active` : undefined}
-                    to={queryString.stringifyUrl(
-                      {
-                        url: location.pathname,
-                        query: { ...parsed, tags: [tag] },
-                      },
-                      {
-                        arrayFormat: `comma`,
+              {tags
+                .filter((tag) =>
+                  allArticles.some((article) => article.tags.includes(tag))
+                )
+                .map((tag, index) => (
+                  <Fragment key={tag}>
+                    <div
+                      data-aos={`fade-left`}
+                      data-aos-delay={(index * 2 + 1) * 50}
+                    >
+                      |
+                    </div>
+                    <Link
+                      data-aos={`fade-left`}
+                      data-aos-delay={(index + 1) * 2 * 50}
+                      className={
+                        filteredTags?.includes(tag) ? `active` : undefined
                       }
-                    )}
-                  >
-                    {tag}
-                  </Link>
-                </Fragment>
-              ))}
+                      to={queryString.stringifyUrl(
+                        {
+                          url: location.pathname,
+                          query: { ...parsed, tags: [tag] },
+                        },
+                        {
+                          arrayFormat: `comma`,
+                        }
+                      )}
+                    >
+                      {tag}
+                    </Link>
+                  </Fragment>
+                ))}
             </div>
           </Stack>
 
-          {allArticles
-            .filter(
-              (p) =>
-                (showDrafts || !p.draft) &&
-                (!tagsFilter || p.tags.some((tag) => tagsFilter.includes(tag)))
-            )
-            .map((article) => (
-              <Stack
-                key={article.slug}
-                id={article.slug}
-                gap={`0.5rem`}
-                data-aos={`fade`}
-                data-aos-offset={100}
-              >
-                <div
-                  css={`
-                    display: flex;
-                    justify-content: space-between;
-                  `}
+          <Fragment key={location.search}>
+            {allArticles
+              .filter(
+                (article) =>
+                  (parsed.draft || parsed.draft === null || !article.draft) &&
+                  (!filteredTags ||
+                    article.tags.some((tag) => filteredTags.includes(tag)))
+              )
+              .map((article) => (
+                <Stack
+                  key={article.slug}
+                  id={article.slug}
+                  gap={`0.5rem`}
+                  data-aos={`fade`}
+                  data-aos-offset={100}
                 >
-                  <div>{article.timeStamp.toDateString()}</div>
-                  <TagPills
-                    tags={[
-                      ...(article.draft ? [`draft`] : []),
-                      ...article.tags,
-                    ]}
-                  />
-                </div>
-
-                {article.title && (
-                  <h3>
-                    <Link to={`article/${article.slug}#top`}>
-                      {article.title}
-                    </Link>
-                  </h3>
-                )}
-
-                {article.quote && (
-                  <Link to={`article/${article.slug}#top`}>
-                    <blockquote>
-                      <q>{article.quote}</q>
-                    </blockquote>
-                  </Link>
-                )}
-
-                <Link to={`article/${article.slug}#top`}>
                   <div
                     css={`
-                      position: relative;
-                      padding-top: 40%;
-                      overflow: hidden;
+                      display: flex;
+                      justify-content: space-between;
                     `}
                   >
+                    <div>{article.timeStamp.toDateString()}</div>
+                    <TagPills
+                      tags={[
+                        ...(article.draft ? [`draft`] : []),
+                        ...article.tags,
+                      ]}
+                    />
+                  </div>
+
+                  {article.title && (
+                    <h3>
+                      <Link to={`article/${article.slug}#top`}>
+                        {article.title}
+                      </Link>
+                    </h3>
+                  )}
+
+                  {article.quote && (
+                    <Link to={`article/${article.slug}#top`}>
+                      <blockquote>
+                        <q>{article.quote}</q>
+                      </blockquote>
+                    </Link>
+                  )}
+
+                  <Link to={`article/${article.slug}#top`}>
                     <div
                       css={`
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        position: relative;
+                        padding-top: 40%;
+                        overflow: hidden;
                       `}
                     >
-                      <Image src={article.image} />
+                      <div
+                        css={`
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          width: 100%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        `}
+                      >
+                        <Image src={article.image} />
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
 
-                {article.excerpt && <div>{article.excerpt}</div>}
-                <Link
-                  to={`article/${article.slug}#top`}
-                  data-aos={`fade-left`}
-                  data-aos-offset={0}
-                >
-                  Read more ❯
-                </Link>
-              </Stack>
-            ))}
+                  {article.excerpt && <div>{article.excerpt}</div>}
+                  <Link
+                    to={`article/${article.slug}#top`}
+                    data-aos={`fade-left`}
+                    data-aos-offset={0}
+                  >
+                    Read more ❯
+                  </Link>
+                </Stack>
+              ))}
+          </Fragment>
         </Stack>
       </Container>
       <Footer />

@@ -1,12 +1,12 @@
 import AnyoneCanWorkHard from "./AnyoneCanWorkHard"
 import AScheduleIsNotAPrison from "./AScheduleIsNotAPrison"
 import HelloWorld from "./HelloWorld"
-import ThereIsntTime from "./ThereIsntTime"
+import ThereIsntTimeSoBriefIsLife from "./ThereIsntTimeSoBriefIsLife"
 
 const allArticles = [
   AnyoneCanWorkHard,
   AScheduleIsNotAPrison,
-  ThereIsntTime,
+  ThereIsntTimeSoBriefIsLife,
   HelloWorld,
 ].sort((a, b) => {
   if (a.draft === b.draft) {

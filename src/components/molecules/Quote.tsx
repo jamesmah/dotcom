@@ -98,12 +98,10 @@ const Quote = ({
                     background: ${({ theme }) =>
                       chroma(theme.palette.dark[2]).alpha(0.1).hex()};
                     font-size: 1.5rem;
-                    color: ${({ theme }) =>
-                      chroma(theme.palette.light[1]).alpha(0.8).hex()};
+                    color: ${({ theme }) => theme.palette.light[1]};
 
                     :hover {
-                      color: ${({ theme }) =>
-                        chroma(theme.palette.light[1]).alpha(0.5).hex()};
+                      color: ${({ theme }) => theme.palette.light[2]};
                     }
 
                     &,

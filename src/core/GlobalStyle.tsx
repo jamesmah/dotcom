@@ -127,5 +127,9 @@ const GlobalStyle = styled.createGlobalStyle`
     cursor: pointer;
     color: inherit;
   }
+
+  .no-margin {
+    margin: 0;
+  }
 `
 export default GlobalStyle

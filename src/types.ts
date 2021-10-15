@@ -1,6 +1,5 @@
 import React, { LazyExoticComponent } from "react"
 
-// export const tags = [`tech`, `life`, `general`, `quote`] as const
 export const tags = [`Tech`, `Quote`] as const
 export type Tag = typeof tags[number]
 

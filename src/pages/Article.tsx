@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { RouteComponentProps } from "react-router"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
@@ -26,16 +27,14 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
             <div data-aos={`fade`}>{data.timeStamp.toDateString()}</div>
             <TagPills tags={data.tags} />
           </div>
-          {data.title && (
-            <h3 data-aos={`fade`} data-aos-delay={100}>
-              {data.title}
-            </h3>
-          )}
+          {data.title && <h3 data-aos={`fade`}>{data.title}</h3>}
 
-          <Page />
+          <Suspense fallback={null}>
+            <Page />
+          </Suspense>
         </Stack>
       </Container>
-      <Footer />
+      <Footer width={`md`} />
     </>
   )
 }

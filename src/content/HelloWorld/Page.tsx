@@ -4,7 +4,7 @@ import data from "."
 
 const Page = () => {
   return (
-    <Stack gap={`3rem`}>
+    <Stack gap={`3rem`} data-aos={`fade`}>
       <ImageAuthor
         image={data.image}
         authorName={`Pixabay`}

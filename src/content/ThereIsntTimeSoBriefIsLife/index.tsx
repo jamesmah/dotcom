@@ -9,7 +9,7 @@ const data: ArticleData = {
     <>
       There isn’t time, so brief is life, for bickerings, apologies,
       heartburnings, callings to account. There is only time for loving, and but
-      an instant, so to speak, for that
+      an instant, so to speak, for that.
     </>
   ),
   tags: [`Quote`],

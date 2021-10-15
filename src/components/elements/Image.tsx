@@ -38,6 +38,8 @@ const Image = ({
       {imageLoaded && (
         <img
           {...props}
+          data-aos={`fade`}
+          data-aos-offset={0}
           src={src}
           css={`
             width: 100%;
