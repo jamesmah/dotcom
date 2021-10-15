@@ -1,17 +1,17 @@
+import { Breakpoint } from "../../theme"
 import Container from "../elements/Container"
 
-const Footer = () => {
+const Footer = ({ width }: { width?: Breakpoint }) => {
   return (
     <Container
-      as="footer"
+      $width={width}
+      as={`footer`}
       css={`
-        padding: 3rem 0 2rem;
+        padding: 6rem 0;
         text-align: center;
       `}
     >
-      <div data-aos="fade-up" data-aos-offset="32" data-aos-once={false}>
-        I ❤️ Buer Buer
-      </div>
+      <div>•••</div>
     </Container>
   )
 }

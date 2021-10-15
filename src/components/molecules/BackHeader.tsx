@@ -11,7 +11,7 @@ const BackHeader = ({ width }: { width?: Breakpoint }) => {
       css={`
         display: flex;
       `}
-      data-aos="fade"
+      data-aos={`fade`}
     >
       <div
         onClick={history.goBack}
@@ -26,7 +26,7 @@ const BackHeader = ({ width }: { width?: Breakpoint }) => {
           }
         `}
       >
-        {`❮`} Back
+        ❮ Back
       </div>
     </Container>
   )

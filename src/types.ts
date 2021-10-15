@@ -1,22 +1,17 @@
 import React, { LazyExoticComponent } from "react"
 
-export interface QuoteData {
-  slug: string
-  timeStamp: Date
-  image: string
-  quoteText: React.ReactNode
-  Page: LazyExoticComponent<() => JSX.Element>
-}
-
-export const tags = [`tech`, `life`, `general`] as const
+// export const tags = [`tech`, `life`, `general`, `quote`] as const
+export const tags = [`Tech`, `Quote`] as const
 export type Tag = typeof tags[number]
 
-export interface BlogPostData {
+export interface ArticleData {
+  draft?: boolean
   slug: string
   timeStamp: Date
-  title: string
+  title?: React.ReactNode
+  quote?: React.ReactNode
   tags: Tag[]
-  thumbnail: string
-  Excerpt: LazyExoticComponent<() => JSX.Element>
+  image: string
+  excerpt?: React.ReactNode
   Page: LazyExoticComponent<() => JSX.Element>
 }

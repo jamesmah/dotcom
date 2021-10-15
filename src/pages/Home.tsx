@@ -1,22 +1,42 @@
+import { Link } from "react-router-dom"
+import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import Quote from "../components/molecules/Quote"
-import Footer from "../components/sections/Footer"
-import allQuotes from "../content/quotes/allQuotes"
+import allArticles from "../content/allArticles"
 
 const Home = () => {
   return (
-    <>
-      <Stack gap="2rem">
-        {allQuotes.map((quote, index) => (
-          <Quote
-            key={quote.slug}
-            textAlign={index % 2 === 0 ? `right` : `left`}
-            data={quote}
-          />
-        ))}
+    <Container>
+      <Stack gap={`2rem`}>
+        {allArticles
+          .filter((article) => !article.draft && article.tags.includes(`Quote`))
+          .map((quote, index) => (
+            <Quote
+              key={quote.slug}
+              textAlign={index % 2 === 0 ? `right` : `left`}
+              data={quote}
+            />
+          ))}
       </Stack>
-      <Footer />
-    </>
+      <Stack
+        css={`
+          padding: 4rem 0 4rem;
+          align-items: flex-end;
+        `}
+      >
+        <Link
+          to={`blog#top`}
+          data-aos={`fade-right`}
+          data-aos-offset={0}
+          css={`
+            margin: 0 2rem;
+            font-size: 1.25rem;
+          `}
+        >
+          Go to Blog ❯
+        </Link>
+      </Stack>
+    </Container>
   )
 }
 

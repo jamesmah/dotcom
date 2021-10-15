@@ -1,16 +1,18 @@
 import { lazy } from "react"
-import { QuoteData } from "../../../types"
+import { ArticleData } from "../../types"
 import image from "./image.jpg"
 
-const data: QuoteData = {
+const data: ArticleData = {
+  draft: true,
   slug: `anyone-can-work-hard-when-they-feel-motivated`,
-  timeStamp: new Date(`2021-10-12T10:26:18.737Z`),
-  quoteText: (
+  timeStamp: new Date(`2021-10-17T00:19:43.640Z`),
+  quote: (
     <>
       Anyone can work hard when they feel motivated. It’s the ability to keep
       going when work isn’t exciting that makes the difference
     </>
   ),
+  tags: [`Quote`],
   image,
   Page: lazy(() => import(`./Page`)),
 }

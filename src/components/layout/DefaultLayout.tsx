@@ -26,7 +26,6 @@ const DefaultLayout = ({ children }: { children?: React.ReactNode }) => {
       <Stack
         css={`
           flex-grow: 1;
-          padding-bottom: 5rem;
         `}
       >
         {children}

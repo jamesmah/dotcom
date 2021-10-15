@@ -125,6 +125,7 @@ const GlobalStyle = styled.createGlobalStyle`
     outline: 0;
     padding: 0;
     cursor: pointer;
+    color: inherit;
   }
 `
 export default GlobalStyle
