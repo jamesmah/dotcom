@@ -49,8 +49,8 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗 Robert Waldinger: What makes a good life? Lessons from the longest
-      study on happiness | TED
+      🔗&nbsp;&nbsp;Robert Waldinger: What makes a good life? Lessons from the
+      longest study on happiness | TED
     </a>
     <ImageAuthor
       image={data.image}

@@ -37,6 +37,14 @@ const Page = () => (
       <code>.jsx</code> or <code>.tsx</code> files.
     </p>
     <img src={image01} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+    </a>
 
     <br />
 
@@ -49,6 +57,14 @@ const Page = () => (
       even with the improved performance. Guess you can’t stop the momentum.
     </p>
     <img src={image02} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+    </a>
 
     <br />
 
@@ -72,6 +88,14 @@ const Page = () => (
       you can run snippets without worrying about type or module errors.
     </p>
     <img src={image03} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+    </a>
 
     <br />
 
@@ -108,6 +132,14 @@ const Page = () => (
       </li>
     </ul>
     <img src={image04} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+    </a>
 
     <br />
 
@@ -121,6 +153,14 @@ const Page = () => (
       code. ;)
     </p>
     <img src={image05} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+    </a>
 
     <br />
 
@@ -134,6 +174,14 @@ const Page = () => (
       topic of semicolons, no we don’t need it.
     </p>
     <img src={image06} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+    </a>
 
     <br />
 
@@ -142,10 +190,18 @@ const Page = () => (
       Alphabetically sorts the keys in selected JSON objects. Similar to how
       sorted imports make life easier for everyone (less merge conflicts and
       easily identify duplicates), JSON files can sometimes benefit from
-      sorting, which is why this probably is better off as a manually triggered
+      sorting, which is why this is probably better off as a manually triggered
       extension rather than a linting rule.
     </p>
     <img src={image07} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json
+    </a>
 
     <br />
 
@@ -160,6 +216,14 @@ const Page = () => (
       ESlint does for javascript. Fantastic.
     </p>
     <img src={image08} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+    </a>
 
     <br />
 
@@ -173,6 +237,14 @@ const Page = () => (
       file.
     </p>
     <img src={image09} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log
+    </a>
 
     <br />
 
@@ -187,6 +259,14 @@ const Page = () => (
       a very long string.
     </p>
     <img src={image10} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components`}
+      target={`_blank`}
+      rel={`noreferrer`}
+    >
+      🔗&nbsp;
+      https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
+    </a>
 
     <br />
 
