@@ -79,7 +79,7 @@ const Page = () => (
     <p>Integrates ESLint into VS Code. Enough said.</p>
     <p>
       Here are some of the linting rules that I add on top of the recommended
-      ones, and some rationale behind them
+      ones, and some rationale behind them.
     </p>
     <ul>
       <li>
