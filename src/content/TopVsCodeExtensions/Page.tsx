@@ -42,8 +42,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -62,8 +61,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -93,8 +91,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -137,8 +134,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -158,8 +154,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -179,8 +174,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -199,8 +193,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -221,8 +214,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -242,8 +234,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
@@ -264,8 +255,7 @@ const Page = () => (
       target={`_blank`}
       rel={`noreferrer`}
     >
-      🔗&nbsp;
-      https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
 
     <br />
