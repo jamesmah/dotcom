@@ -1,10 +1,12 @@
 import { css } from "styled-components"
+import { Category } from "../../types"
+import { safeGetCategoryKey } from "../../utils/category"
 import Stack from "../elements/Stack"
 
-const TagPills = ({ items, ...props }: { items: string[] }) => {
+const CategoryPills = ({ categories, ...props }: { categories: string[] }) => {
   return (
     <Stack direction={`row`} gap={`1rem`}>
-      {items.map((item, index, array) => (
+      {categories.map((category, index, array) => (
         <div
           {...props}
           key={index}
@@ -19,11 +21,12 @@ const TagPills = ({ items, ...props }: { items: string[] }) => {
             font-weight: 600;
           `}
         >
-          {item}
+          {category !== Category.None &&
+            (safeGetCategoryKey(category) || category)}
         </div>
       ))}
     </Stack>
   )
 }
 
-export default TagPills
+export default CategoryPills

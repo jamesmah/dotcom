@@ -109,6 +109,13 @@ const GlobalStyle = styled.createGlobalStyle`
     }
   }
 
+  code {
+    font-size: 0.875rem;
+    padding: 0.125rem;
+    border-radius: 3px;
+    background-color: ${({ theme }) => theme.palette.dark[3]};
+  }
+
   .list-reset {
     list-style: none;
     margin-top: 0;

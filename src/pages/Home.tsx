@@ -3,13 +3,16 @@ import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import Quote from "../components/molecules/Quote"
 import allArticles from "../content/allArticles"
+import { Category } from "../types"
 
 const Home = () => {
   return (
     <Container>
       <Stack gap={`2rem`}>
         {allArticles
-          .filter((article) => !article.draft && article.category === `Quote`)
+          .filter(
+            (article) => !article.draft && article.category === Category.Quote
+          )
           .map((quote, index) => (
             <Quote
               key={quote.slug}

@@ -4,14 +4,14 @@ import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import BackHeader from "../components/molecules/BackHeader"
-import TagPills from "../components/molecules/Pills"
+import CategoryPills from "../components/molecules/CategoryPills"
 import allArticles from "../content/allArticles"
 import PageNotFound from "./PageNotFound"
 
 const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
-  const data = allArticles.find((q) => q.slug === match.params.id)
-  if (!data?.Page) return <PageNotFound />
-  const { Page } = data
+  const article = allArticles.find((q) => q.slug === match.params.id)
+  if (!article?.Page) return <PageNotFound />
+  const { Page } = article
 
   return (
     <>
@@ -30,11 +30,13 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
                 color: ${({ theme }) => theme.palette.light[2]};
               `}
             >
-              {data.timeStamp.toDateString()}
+              {article.timeStamp.toDateString()}
             </div>
-            {data.category && <TagPills items={[data.category]} />}
+            {article.category && (
+              <CategoryPills categories={[article.category]} />
+            )}
           </div>
-          {data.title && <h3 data-aos={`fade`}>{data.title}</h3>}
+          {article.title && <h3 data-aos={`fade`}>{article.title}</h3>}
 
           <Suspense fallback={null}>
             <Page />

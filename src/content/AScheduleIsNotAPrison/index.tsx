@@ -1,19 +1,21 @@
 import { lazy } from "react"
-import { ArticleData } from "../../types"
+import { ArticleData, Category } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
   draft: true,
   slug: `a-schedule-is-not-a-prison`,
   timeStamp: new Date(`2021-10-11T10:26:18.737Z`),
+  category: Category.Quote,
+  title: ``,
   quote: (
     <>
       A schedule is not a prison. Set the schedule so that it is the day that
       you want. Set it up so it’s the best day you could have
     </>
   ),
-  category: `Quote`,
   image,
+  excerpt: ``,
   Page: lazy(() => import(`./Page`)),
 }
 

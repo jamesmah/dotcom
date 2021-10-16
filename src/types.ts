@@ -1,22 +1,20 @@
 import React, { LazyExoticComponent } from "react"
 
-export const categories = [`Tech`, `Quote`] as const
-export type Category = typeof categories[number]
-
-export const categoryTitles: Record<string, string | undefined> = {
-  Dev: `Software Development`,
-  Motivation: `Motivation`,
-  Quote: `Quotes`,
+export enum Category {
+  None = `No Category`,
+  Dev = `Software Development`,
+  Quote = `Quotes`,
+  Motivation = `Motivation`,
 }
 
 export interface ArticleData {
-  draft?: boolean
+  draft: boolean
   slug: string
   timeStamp: Date
-  title?: React.ReactNode
-  quote?: React.ReactNode
-  category?: Category
+  category: Category
+  title: React.ReactNode
+  quote: React.ReactNode
   image: string
-  excerpt?: React.ReactNode
+  excerpt: React.ReactNode
   Page: LazyExoticComponent<() => JSX.Element>
 }

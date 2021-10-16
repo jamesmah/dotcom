@@ -5,9 +5,9 @@ import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Image from "../components/elements/Image"
 import Stack from "../components/elements/Stack"
-import Pills from "../components/molecules/Pills"
+import CategoryPills from "../components/molecules/CategoryPills"
 import allArticles from "../content/allArticles"
-import { categories, categoryTitles } from "../types"
+import { Category } from "../types"
 
 const Blog = ({ location }: RouteComponentProps) => {
   const parsed = queryString.parse(location.search)
@@ -24,7 +24,7 @@ const Blog = ({ location }: RouteComponentProps) => {
         <Stack gap={`1rem`}>
           <h1 data-aos={`fade`}>
             {(typeof selectedCategory === `string` &&
-              categoryTitles[selectedCategory]) ||
+              Object.values(Category).find((c) => c === selectedCategory)) ||
               `All Articles`}
           </h1>
 
@@ -63,12 +63,14 @@ const Blog = ({ location }: RouteComponentProps) => {
             >
               All
             </Link>
-            {categories
-              .filter((category) =>
-                allArticles.some((article) => category === article.category)
+            {Object.entries(Category)
+              .filter(
+                ([key, category]) =>
+                  category !== Category.None &&
+                  allArticles.some((article) => category === article.category)
               )
-              .map((category, index) => (
-                <Fragment key={category}>
+              .map(([key, category], index) => (
+                <Fragment key={key}>
                   <div
                     data-aos={`fade-left`}
                     data-aos-delay={(index * 2 + 1) * 50}
@@ -83,10 +85,10 @@ const Blog = ({ location }: RouteComponentProps) => {
                     }
                     to={queryString.stringifyUrl({
                       url: location.pathname,
-                      query: { ...parsed, category },
+                      query: { ...parsed, category: category },
                     })}
                   >
-                    {category}
+                    {key}
                   </Link>
                 </Fragment>
               ))}
@@ -121,8 +123,8 @@ const Blog = ({ location }: RouteComponentProps) => {
                   >
                     {article.timeStamp.toDateString()}
                   </div>
-                  <Pills
-                    items={[
+                  <CategoryPills
+                    categories={[
                       article.draft ? `Draft` : ``,
                       article.category || ``,
                     ].filter(Boolean)}
