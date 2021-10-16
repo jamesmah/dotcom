@@ -31,7 +31,7 @@ const Page = () => (
     <p>
       A simple extension that renames the closing HTML/XML tag. You would think
       that this feature would come out of the box from VS Code by now, but as of
-      today, while there is a built in setting to turn this on for HTML files
+      today, while there is a built-in setting to turn this on for HTML files
       using the setting <code>editor.linkedEditing</code>, there is none for
       {` `}
       <code>.jsx</code> or <code>.tsx</code> files.
@@ -42,7 +42,7 @@ const Page = () => (
 
     <h3>2. Bracket Pair Colorizer 2</h3>
     <p>
-      Identifies matching brackets and colorizes them. This extension is all
+      Identifies matching brackets and colourizes them. This extension is all
       about improving readability, and once you start using this you will wonder
       how you ever coded without it. Interestingly the first version of this
       extension is still being used much more widely than this updated version
@@ -55,7 +55,7 @@ const Page = () => (
     <h3>3. Code Runner</h3>
     <p>
       Run code snippets or files for most mainstream languages. For frontend web
-      development, it save you the hassle from opening a browser console and
+      development, it saves you the hassle of opening a browser console and
       typing your code out.
     </p>
     <p>
@@ -78,33 +78,33 @@ const Page = () => (
     <h3>4. ESLint</h3>
     <p>Integrates ESLint into VS Code. Enough said.</p>
     <p>
-      Here’s some of the linting rules that I add on top of the recommended
+      Here are some of the linting rules that I add on top of the recommended
       ones, and some rationale behind them
     </p>
     <ul>
       <li>
-        Unused vars take up memory and leaves dead code lying around. This
+        Unused variables take up memory and leave dead code lying around. This
         coupled with <code>ts-prune</code> helps clean things up.
       </li>
       <li>
         Single or double quotes? Neither. Template literals with backticks were
-        introduced in ES6 and nullufies the debate of whether single quotes or
+        introduced in ES6 and nullify the debate of whether single quotes or
         double quotes are used more in text. Do you ever use backticks in your
         sentences? I guess not. With embedded expressions such a useful and
         common way of writing code nowadays, why go through the hassle of
         switching between different quotation marks anymore?
       </li>
       <li>
-        <code>import/order</code> and <code>sort-imports</code> organises your
+        <code>import/order</code> and <code>sort-imports</code> organise your
         imports nicely. The reason for using both is that they autofix different
         parts of the imports.
       </li>
       <li>No. Console.</li>
       <li>
         Similar to the discussion on which quotation marks to use, I opted to
-        simplify jsx props with using curly brace everywhere. Why complicate
-        life with so many options and conditions? Just pick the most versatile
-        option and stick to it.
+        simplify JSX props by using curly brace everywhere. Why complicate life
+        with so many options and conditions? Just pick the most versatile option
+        and stick to it.
       </li>
     </ul>
     <img src={image04} />
@@ -141,8 +141,8 @@ const Page = () => (
     <p>
       Alphabetically sorts the keys in selected JSON objects. Similar to how
       sorted imports make life easier for everyone (less merge conflicts and
-      easily identify duplicates), JSON files can *sometimes* benefit from
-      sorting. Which is why this probably is better off as a manually triggered
+      easily identify duplicates), JSON files can sometimes benefit from
+      sorting, which is why this probably is better off as a manually triggered
       extension rather than a linting rule.
     </p>
     <img src={image07} />
@@ -193,7 +193,7 @@ const Page = () => (
     <p>
       While this is my current list of preferred extensions, the tools that you
       should use to code is highly dependent on the project that you’re working
-      and your personal preference. On top of that, with the current pace of
+      on and your personal preference. On top of that, with the current pace of
       software development, half the extensions on this list might already be
       outdated by the time you are reading this! Rather than being a defining
       list of Visual Studio Code extensions, I hope that this can bring
