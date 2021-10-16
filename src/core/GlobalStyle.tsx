@@ -16,7 +16,7 @@ const GlobalStyle = styled.createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     min-height: fill-available;
     background: ${({ theme }) => theme.palette.dark[1]};
-    color: ${({ theme }) => theme.palette.light[2]};
+    color: ${({ theme }) => theme.palette.light[1]};
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     display: flex;
@@ -102,7 +102,7 @@ const GlobalStyle = styled.createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.palette.light[1]};
+    color: ${({ theme }) => theme.palette.light[2]};
 
     :hover {
       color: ${({ theme }) => theme.palette.light[3]};

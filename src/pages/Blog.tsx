@@ -114,7 +114,13 @@ const Blog = ({ location }: RouteComponentProps) => {
                     justify-content: space-between;
                   `}
                 >
-                  <div>{article.timeStamp.toDateString()}</div>
+                  <div
+                    css={css`
+                      color: ${({ theme }) => theme.palette.light[2]};
+                    `}
+                  >
+                    {article.timeStamp.toDateString()}
+                  </div>
                   <Pills
                     items={[
                       article.draft ? `Draft` : ``,
@@ -125,14 +131,24 @@ const Blog = ({ location }: RouteComponentProps) => {
 
                 {article.title && (
                   <h3>
-                    <Link to={`article/${article.slug}#top`}>
+                    <Link
+                      to={`article/${article.slug}#top`}
+                      css={css`
+                        color: ${({ theme }) => theme.palette.light[1]};
+                      `}
+                    >
                       {article.title}
                     </Link>
                   </h3>
                 )}
 
                 {article.quote && (
-                  <Link to={`article/${article.slug}#top`}>
+                  <Link
+                    to={`article/${article.slug}#top`}
+                    css={css`
+                      color: ${({ theme }) => theme.palette.light[1]};
+                    `}
+                  >
                     <blockquote>
                       <q>{article.quote}</q>
                     </blockquote>
