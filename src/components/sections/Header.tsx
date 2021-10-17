@@ -46,12 +46,15 @@ const Header = () => {
           >
             <Link
               to={`/#top`}
-              css={`
+              css={css`
                 padding: 0.5rem;
                 margin: -0.5rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: ${({ theme }) => theme.palette.light[1]};
               `}
             >
-              <img src={`/logo.png`} alt={`JM`} width={32} height={32} />
+              JM
             </Link>
 
             <Hamburger toggleIsActive={toggleIsActive} isActive={isActive} />
@@ -73,9 +76,8 @@ const Header = () => {
             z-index: 999;
             background: ${({ theme }) =>
               chroma(theme.palette.dark[1]).alpha(0.97).hex()};
-            display: flex;
+            display: grid;
             place-items: center;
-            justify-content: center;
           `}
         >
           <Stack

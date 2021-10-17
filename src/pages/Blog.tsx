@@ -182,13 +182,9 @@ const Blog = ({ location }: RouteComponentProps) => {
                 </Link>
 
                 {article.excerpt && <div>{article.excerpt}</div>}
-                <Link
-                  to={`/article/${article.slug}#top`}
-                  data-aos={`fade-left`}
-                  data-aos-offset={0}
-                >
-                  Read more ❯
-                </Link>
+                <div data-aos={`fade-left`} data-aos-offset={0}>
+                  <Link to={`/article/${article.slug}#top`}>Read more ❯</Link>
+                </div>
               </Stack>
             ))}
         </Fragment>

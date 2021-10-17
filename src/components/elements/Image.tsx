@@ -1,6 +1,7 @@
 import AOS from "aos"
 import { useEffect, useState } from "react"
 import LazyLoad from "react-lazyload"
+import Loader from "./Loader"
 
 const Image = ({
   src,
@@ -23,7 +24,9 @@ const Image = ({
           once
           offset={500}
           css={`
+            width: 100%;
             padding-top: calc(100% / (${placeholderAspectRatio}));
+            position: relative;
           `}
         >
           <img
@@ -33,6 +36,18 @@ const Image = ({
             `}
             onLoad={() => setImageLoaded(true)}
           />
+          <div
+            css={`
+              display: grid;
+              place-items: center;
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+            `}
+          >
+            <Loader />
+          </div>
         </LazyLoad>
       )}
       {imageLoaded && (

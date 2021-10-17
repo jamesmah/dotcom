@@ -6,20 +6,20 @@ import allArticles from "../content/allArticles"
 import { Category } from "../types"
 
 const Home = () => {
+  const allQuotes = allArticles.filter(
+    (article) => !article.draft && article.category === Category.Quote
+  )
+
   return (
     <Container>
       <Stack gap={`2rem`}>
-        {allArticles
-          .filter(
-            (article) => !article.draft && article.category === Category.Quote
-          )
-          .map((quote, index) => (
-            <Quote
-              key={quote.slug}
-              textAlign={index % 2 === 0 ? `right` : `left`}
-              data={quote}
-            />
-          ))}
+        {allQuotes.map((quote, index) => (
+          <Quote
+            key={quote.slug}
+            textAlign={index % 2 === 0 ? `right` : `left`}
+            data={quote}
+          />
+        ))}
       </Stack>
       <Stack
         css={`
@@ -27,17 +27,17 @@ const Home = () => {
           align-items: flex-end;
         `}
       >
-        <Link
-          to={`/blog#top`}
-          data-aos={`fade-right`}
-          data-aos-offset={0}
-          css={`
-            margin: 0 2rem;
-            font-size: 1.25rem;
-          `}
-        >
-          Go to Blog ❯
-        </Link>
+        <div data-aos={`fade-right`} data-aos-offset={0}>
+          <Link
+            to={`/blog#top`}
+            css={`
+              margin: 0 2rem;
+              font-size: 1.25rem;
+            `}
+          >
+            Go to Blog ❯
+          </Link>
+        </div>
       </Stack>
     </Container>
   )

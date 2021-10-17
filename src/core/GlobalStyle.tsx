@@ -24,7 +24,7 @@ const GlobalStyle = styled.createGlobalStyle`
     line-height: 1.3;
 
     * {
-      transition: color 0.1s;
+      transition: all 0.2s;
     }
   }
 

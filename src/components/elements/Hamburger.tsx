@@ -21,6 +21,10 @@ const Hamburger = ({
     css={`
       padding: 0.5rem;
       margin: -0.5rem;
+
+      :hover {
+        opacity: 0.6 !important;
+      }
     `}
   >
     <span className={`hamburger-box`}>
