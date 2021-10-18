@@ -3,7 +3,6 @@ import { ArticleData, Category } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  draft: false,
   slug: `top-visual-studio-code-extensions`,
   timeStamp: new Date(`2021-10-16T04:24:17.209Z`),
   category: Category.Dev,

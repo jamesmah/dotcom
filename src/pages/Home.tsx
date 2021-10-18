@@ -7,7 +7,7 @@ import { Category } from "../types"
 
 const Home = () => {
   const allQuotes = allArticles.filter(
-    (article) => !article.draft && article.category === Category.Quote
+    (article) => article.category === Category.Quote
   )
 
   return (

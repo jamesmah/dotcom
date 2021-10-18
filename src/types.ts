@@ -8,7 +8,6 @@ export enum Category {
 }
 
 export interface ArticleData {
-  draft: boolean
   slug: string
   timeStamp: Date
   category: Category

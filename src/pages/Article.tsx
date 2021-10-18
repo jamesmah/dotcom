@@ -5,11 +5,13 @@ import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import BackHeader from "../components/molecules/BackHeader"
 import CategoryPills from "../components/molecules/CategoryPills"
-import allArticles from "../content/allArticles"
+import allArticles, { allDrafts } from "../content/allArticles"
 import PageNotFound from "./PageNotFound"
 
 const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
-  const article = allArticles.find((q) => q.slug === match.params.id)
+  const article = allArticles
+    .concat(allDrafts)
+    .find((article) => article.slug === match.params.id)
   if (!article?.Page) return <PageNotFound />
   const { Page } = article
 

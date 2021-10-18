@@ -1,21 +1,15 @@
-import AnyoneCanWorkHard from "./AnyoneCanWorkHard"
-import AScheduleIsNotAPrison from "./AScheduleIsNotAPrison"
-import HelloWorld from "./HelloWorld"
-import ThereIsntTimeSoBriefIsLife from "./ThereIsntTimeSoBriefIsLife"
-import TopVsCodeExtensions from "./TopVsCodeExtensions"
+import DraftAnyoneCanWorkHard from "./DraftAnyoneCanWorkHard"
+import DraftAScheduleIsNotAPrison from "./DraftAScheduleIsNotAPrison"
+import Post1HelloWorld from "./Post1HelloWorld"
+import Post2ThereIsntTimeSoBriefIsLife from "./Post2ThereIsntTimeSoBriefIsLife"
+import Post3TopVsCodeExtensions from "./Post3TopVsCodeExtensions"
+
+export const allDrafts = [DraftAnyoneCanWorkHard, DraftAScheduleIsNotAPrison]
 
 const allArticles = [
-  AnyoneCanWorkHard,
-  AScheduleIsNotAPrison,
-  ThereIsntTimeSoBriefIsLife,
-  HelloWorld,
-  TopVsCodeExtensions,
-].sort((a, b) => {
-  if (a.draft === b.draft) {
-    return b.timeStamp.getTime() - a.timeStamp.getTime()
-  }
-  if (a.draft) return -1
-  return 1
-})
+  Post3TopVsCodeExtensions,
+  Post2ThereIsntTimeSoBriefIsLife,
+  Post1HelloWorld,
+]
 
 export default allArticles

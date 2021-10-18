@@ -6,12 +6,15 @@ import Container from "../components/elements/Container"
 import Image from "../components/elements/Image"
 import Stack from "../components/elements/Stack"
 import CategoryPills from "../components/molecules/CategoryPills"
-import allArticles from "../content/allArticles"
+import allArticles, { allDrafts } from "../content/allArticles"
 import { Category } from "../types"
 
 const Blog = ({ location }: RouteComponentProps) => {
   const parsed = queryString.parse(location.search)
   const selectedCategory = parsed.category
+
+  const articles =
+    `draft` in parsed ? allDrafts.concat(allArticles) : allArticles
 
   return (
     <Container
@@ -67,7 +70,7 @@ const Blog = ({ location }: RouteComponentProps) => {
               .filter(
                 ([key, category]) =>
                   category !== Category.None &&
-                  allArticles.some((article) => category === article.category)
+                  articles.some((article) => category === article.category)
               )
               .map(([key, category], index) => (
                 <Fragment key={key}>
@@ -96,11 +99,10 @@ const Blog = ({ location }: RouteComponentProps) => {
         </Stack>
 
         <Fragment key={location.search}>
-          {allArticles
+          {articles
             .filter(
               (article) =>
-                (parsed.draft || parsed.draft === null || !article.draft) &&
-                (!selectedCategory || article.category === selectedCategory)
+                !selectedCategory || article.category === selectedCategory
             )
             .map((article) => (
               <Stack
@@ -123,12 +125,9 @@ const Blog = ({ location }: RouteComponentProps) => {
                   >
                     {article.timeStamp.toDateString()}
                   </div>
-                  <CategoryPills
-                    categories={[
-                      article.draft ? `Draft` : ``,
-                      article.category || ``,
-                    ].filter(Boolean)}
-                  />
+                  {article.category && (
+                    <CategoryPills categories={[article.category]} />
+                  )}
                 </div>
 
                 {article.title && (

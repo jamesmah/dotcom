@@ -3,15 +3,14 @@ import { ArticleData, Category } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  draft: true,
-  slug: `anyone-can-work-hard-when-they-feel-motivated`,
-  timeStamp: new Date(`2021-10-17T00:19:43.640Z`),
+  slug: `a-schedule-is-not-a-prison`,
+  timeStamp: new Date(`2021-10-11T10:26:18.737Z`),
   category: Category.Quote,
   title: ``,
   quote: (
     <>
-      Anyone can work hard when they feel motivated. It’s the ability to keep
-      going when work isn’t exciting that makes the difference
+      A schedule is not a prison. Set the schedule so that it is the day that
+      you want. Set it up so it’s the best day you could have
     </>
   ),
   image,

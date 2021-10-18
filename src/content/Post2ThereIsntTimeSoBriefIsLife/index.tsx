@@ -3,15 +3,15 @@ import { ArticleData, Category } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  draft: true,
-  slug: `a-schedule-is-not-a-prison`,
-  timeStamp: new Date(`2021-10-11T10:26:18.737Z`),
+  slug: `there-isnt-time-so-brief-is-life`,
+  timeStamp: new Date(`2021-10-15T00:19:16.790Z`),
   category: Category.Quote,
   title: ``,
   quote: (
     <>
-      A schedule is not a prison. Set the schedule so that it is the day that
-      you want. Set it up so it’s the best day you could have
+      There isn’t time, so brief is life, for bickerings, apologies,
+      heartburnings, callings to account. There is only time for loving, and but
+      an instant, so to speak, for that.
     </>
   ),
   image,

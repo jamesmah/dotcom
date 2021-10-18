@@ -3,8 +3,8 @@ import { keyframes } from "styled-components"
 const Loader = () => (
   <div
     css={`
-      width: 8rem;
-      height: 8rem;
+      width: 6rem;
+      height: 6rem;
       position: relative;
       filter: blur(1px);
       animation: ${spinAnimation} 2s linear infinite;
