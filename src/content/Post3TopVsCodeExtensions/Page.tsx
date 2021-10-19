@@ -127,6 +127,11 @@ const Page = () => (
         with so many options and conditions? Just pick the most versatile option
         and stick to it.
       </li>
+      <li>
+        Probably not the most necessary linting rule, I just prefer the
+        consistency of prop ordering on jsx elements so that it is easier to
+        identify similar elements for potential reusability.
+      </li>
     </ul>
     <img src={image04} />
     <a

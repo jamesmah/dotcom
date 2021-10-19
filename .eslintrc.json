@@ -24,7 +24,6 @@
         }
       }
     ],
-    "react/jsx-sort-props": ["warn"],
     "jsx-a11y/alt-text": "off",
     "no-console": ["warn"],
     "react-hooks/exhaustive-deps": "off",
@@ -35,6 +34,7 @@
         "props": "always"
       }
     ],
+    "react/jsx-sort-props": ["warn"],
     "react/no-unescaped-entities": ["warn"],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
