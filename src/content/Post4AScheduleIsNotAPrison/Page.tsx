@@ -35,7 +35,7 @@ const Page = () => {
         post. His views on human psychology and society may be rather
         controversial to some. However, if you were to go a little deeper into
         his rationale, they would start to appear quite dangerously logical,
-        even if some ideas aren’t entirely practical today. Regardless on
+        even if some ideas aren’t entirely practical today. Regardless of
         whether I agree or disagree with some of his viewpoints, Jordan Peterson
         has inspired me to think differently from before, for the better.
       </p>
@@ -65,14 +65,14 @@ const Page = () => {
         your entire journey. If you’ve never been able to sit down and study for
         more than twenty minutes, scheduling 5 hours of study a day isn’t going
         to work. Try adding a few minutes a day, and if you continuously achieve
-        that its going to loop back positively and spiral you upwards.
+        that it is going to loop back positively and spiral you upwards.
       </p>
 
       <p>
         You are not your own servant. You have to negotiate with yourself to
-        find the right amount of productivity while also have a good life, a
-        life that you’d like to have. There has to be a balance between
-        responsibilities, obligation and doing what you enjoy. With the right
+        find the right amount of productivity and also have a good life, a life
+        that you’d like to have. There has to be a balance between
+        responsibilities, obligations and doing what you enjoy. With the right
         ratio between them, doing what you enjoy might feel even better than
         before since would be compounded with a sense of reward and
         satisfaction.
