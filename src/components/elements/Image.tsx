@@ -21,20 +21,20 @@ const Image = ({
     <>
       {!imageLoaded && (
         <LazyLoad
-          once
-          offset={500}
           css={`
             width: 100%;
             padding-top: calc(100% / (${placeholderAspectRatio}));
             position: relative;
           `}
+          offset={500}
+          once
         >
           <img
-            src={src}
             css={`
               display: none;
             `}
             onLoad={() => setImageLoaded(true)}
+            src={src}
           />
           <div
             css={`
@@ -53,12 +53,12 @@ const Image = ({
       {imageLoaded && (
         <img
           {...props}
-          data-aos={`fade`}
-          data-aos-offset={0}
-          src={src}
           css={`
             width: 100%;
           `}
+          data-aos={`fade`}
+          data-aos-offset={0}
+          src={src}
         />
       )}
     </>

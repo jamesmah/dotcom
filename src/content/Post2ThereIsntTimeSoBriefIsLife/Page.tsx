@@ -4,11 +4,11 @@ import data from "."
 
 const Page = () => (
   <Stack
-    data-aos={`fade`}
-    gap={`1rem`}
     css={`
       padding-top: 1rem;
     `}
+    data-aos={`fade`}
+    gap={`1rem`}
   >
     <p>
       What is the secret to happiness and health? It might be simpler than you
@@ -46,16 +46,16 @@ const Page = () => (
     <p>Click below to watch the full video:</p>
     <a
       href={`https://youtu.be/8KkKuTCFvzI`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Robert Waldinger: What makes a good life? Lessons from the
       longest study on happiness | TED
     </a>
     <ImageAuthor
-      image={data.image}
-      authorName={`Francesco Ungaro`}
       authorLink={`https://www.pexels.com/@francesco-ungaro`}
+      authorName={`Francesco Ungaro`}
+      image={data.image}
       imageLink={`https://www.pexels.com/photo/hot-air-ballons-in-the-sky-2325446/`}
     />
   </Stack>

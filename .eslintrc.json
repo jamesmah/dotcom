@@ -24,6 +24,7 @@
         }
       }
     ],
+    "react/jsx-sort-props": ["warn"],
     "jsx-a11y/alt-text": "off",
     "no-console": ["warn"],
     "react-hooks/exhaustive-deps": "off",

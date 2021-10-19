@@ -11,9 +11,6 @@ const CategoryPills = ({ categories, ...props }: { categories: string[] }) => {
         .map((category, index, array) => (
           <div
             {...props}
-            key={index}
-            data-aos={`fade`}
-            data-aos-delay={(array.length - index - 1) * 100}
             css={css`
               color: ${({ theme }) => theme.palette.light[2]};
               background: ${({ theme }) => theme.palette.dark[2]};
@@ -22,6 +19,9 @@ const CategoryPills = ({ categories, ...props }: { categories: string[] }) => {
               border-radius: 0.5rem;
               font-weight: 600;
             `}
+            data-aos={`fade`}
+            data-aos-delay={(array.length - index - 1) * 100}
+            key={index}
           >
             {safeGetCategoryKey(category) || category}
           </div>

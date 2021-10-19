@@ -11,13 +11,11 @@ const Hamburger = ({
 } & React.HTMLProps<HTMLButtonElement>) => (
   <button
     {...props}
-    onClick={toggleIsActive}
     className={classNames(
       `hamburger hamburger--collapse`,
       isActive && `is-active`,
       props.className
     )}
-    type={`button`}
     css={`
       padding: 0.5rem;
       margin: -0.5rem;
@@ -26,6 +24,8 @@ const Hamburger = ({
         opacity: 0.6 !important;
       }
     `}
+    onClick={toggleIsActive}
+    type={`button`}
   >
     <span className={`hamburger-box`}>
       <span className={`hamburger-inner`}></span>

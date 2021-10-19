@@ -29,8 +29,8 @@ const BackHeader = ({ width }: { width?: Breakpoint }) => {
     >
       <StyledDiv
         as={useBrowserBack ? undefined : Link}
-        to={(useBrowserBack ? undefined : `/blog`) as string}
         onClick={useBrowserBack ? history.goBack : undefined}
+        to={(useBrowserBack ? undefined : `/blog`) as string}
       >
         ❮ Back
       </StyledDiv>

@@ -36,16 +36,15 @@ const Header = () => {
           `}
         >
           <Container
-            data-aos={`fade`}
             css={`
               display: flex;
               justify-content: space-between;
               align-items: center;
               height: 5rem;
             `}
+            data-aos={`fade`}
           >
             <Link
-              to={`/#top`}
               css={css`
                 padding: 0.5rem;
                 margin: -0.5rem;
@@ -53,19 +52,17 @@ const Header = () => {
                 font-weight: 600;
                 color: ${({ theme }) => theme.palette.light[1]};
               `}
+              to={`/#top`}
             >
               JM
             </Link>
 
-            <Hamburger toggleIsActive={toggleIsActive} isActive={isActive} />
+            <Hamburger isActive={isActive} toggleIsActive={toggleIsActive} />
           </Container>
         </div>
       </header>
       {isActive && (
         <nav
-          onClick={toggleIsActive}
-          data-aos={`fade-down`}
-          data-aos-duration={`300`}
           css={css`
             position: fixed;
             top: 0;
@@ -79,13 +76,16 @@ const Header = () => {
             display: grid;
             place-items: center;
           `}
+          data-aos={`fade-down`}
+          data-aos-duration={`300`}
+          onClick={toggleIsActive}
         >
           <Stack
-            gap={`0.5rem`}
             css={`
               text-align: center;
               padding-bottom: 4rem;
             `}
+            gap={`0.5rem`}
           >
             <div>Links</div>
             <Stack as={`ul`} className={`list-reset`}>

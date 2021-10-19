@@ -18,7 +18,7 @@ const ImageAuthor = ({
         Photo by
         {` `}
         <strong>
-          <a href={authorLink} target={`_blank`} rel={`noreferrer`}>
+          <a href={authorLink} rel={`noreferrer`} target={`_blank`}>
             {authorName}
           </a>
         </strong>
@@ -26,7 +26,7 @@ const ImageAuthor = ({
         from
         {` `}
         <strong>
-          <a href={imageLink} target={`_blank`} rel={`noreferrer`}>
+          <a href={imageLink} rel={`noreferrer`} target={`_blank`}>
             Pexels
           </a>
         </strong>

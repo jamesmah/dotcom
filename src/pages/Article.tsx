@@ -27,10 +27,10 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
             `}
           >
             <div
-              data-aos={`fade`}
               css={css`
                 color: ${({ theme }) => theme.palette.light[2]};
               `}
+              data-aos={`fade`}
             >
               {article.timeStamp.toDateString()}
             </div>

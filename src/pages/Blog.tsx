@@ -53,6 +53,7 @@ const Blog = ({ location }: RouteComponentProps) => {
           >
             <Link
               className={selectedCategory ? undefined : `active`}
+              data-aos={`fade-left`}
               to={queryString.stringifyUrl(
                 {
                   url: location.pathname,
@@ -62,7 +63,6 @@ const Blog = ({ location }: RouteComponentProps) => {
                   arrayFormat: `comma`,
                 }
               )}
-              data-aos={`fade-left`}
             >
               All
             </Link>
@@ -81,11 +81,11 @@ const Blog = ({ location }: RouteComponentProps) => {
                     |
                   </div>
                   <Link
-                    data-aos={`fade-left`}
-                    data-aos-delay={(index + 1) * 2 * 50}
                     className={
                       selectedCategory === category ? `active` : undefined
                     }
+                    data-aos={`fade-left`}
+                    data-aos-delay={(index + 1) * 2 * 50}
                     to={queryString.stringifyUrl({
                       url: location.pathname,
                       query: { ...parsed, category: category },
@@ -106,11 +106,11 @@ const Blog = ({ location }: RouteComponentProps) => {
             )
             .map((article) => (
               <Stack
-                key={article.slug}
-                id={article.slug}
-                gap={`0.5rem`}
                 data-aos={`fade`}
                 data-aos-offset={100}
+                gap={`0.5rem`}
+                id={article.slug}
+                key={article.slug}
               >
                 <div
                   css={`
@@ -133,10 +133,10 @@ const Blog = ({ location }: RouteComponentProps) => {
                 {article.title && (
                   <h3>
                     <Link
-                      to={`article/${article.slug}#top`}
                       css={css`
                         color: ${({ theme }) => theme.palette.light[1]};
                       `}
+                      to={`article/${article.slug}#top`}
                     >
                       {article.title}
                     </Link>
@@ -145,10 +145,10 @@ const Blog = ({ location }: RouteComponentProps) => {
 
                 {article.quote && (
                   <Link
-                    to={`article/${article.slug}#top`}
                     css={css`
                       color: ${({ theme }) => theme.palette.light[1]};
                     `}
+                    to={`article/${article.slug}#top`}
                   >
                     <blockquote>
                       <q>{article.quote}</q>

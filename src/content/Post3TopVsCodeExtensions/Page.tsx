@@ -14,11 +14,11 @@ import data from "."
 
 const Page = () => (
   <Stack
-    data-aos={`fade`}
-    gap={`1rem`}
     css={`
       padding-top: 1rem;
     `}
+    data-aos={`fade`}
+    gap={`1rem`}
   >
     <p>
       Here’s my list of the most useful Visual Studio Code extensions that you
@@ -39,8 +39,8 @@ const Page = () => (
     <img src={image01} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -58,8 +58,8 @@ const Page = () => (
     <img src={image02} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -88,8 +88,8 @@ const Page = () => (
     <img src={image03} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -131,8 +131,8 @@ const Page = () => (
     <img src={image04} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -151,8 +151,8 @@ const Page = () => (
     <img src={image05} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -171,8 +171,8 @@ const Page = () => (
     <img src={image06} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -190,8 +190,8 @@ const Page = () => (
     <img src={image07} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -211,8 +211,8 @@ const Page = () => (
     <img src={image08} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -231,8 +231,8 @@ const Page = () => (
     <img src={image09} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -252,8 +252,8 @@ const Page = () => (
     <img src={image10} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components`}
-      target={`_blank`}
       rel={`noreferrer`}
+      target={`_blank`}
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
@@ -274,9 +274,9 @@ const Page = () => (
     <br />
 
     <ImageAuthor
-      image={data.image}
-      authorName={`José Oliveira`}
       authorLink={`https://www.pexels.com/@jose-oliveira-32884059`}
+      authorName={`José Oliveira`}
+      image={data.image}
       imageLink={`https://www.pexels.com/photo/wood-landscape-water-summer-7028840/`}
     />
   </Stack>

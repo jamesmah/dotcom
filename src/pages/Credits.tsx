@@ -16,35 +16,35 @@ const Credits = () => {
     >
       <Stack gap={`2rem`}>
         <h1 data-aos={`fade`}>Credits</h1>
-        <Stack gap={`0.5rem`} data-aos={`fade-slide-up`} data-aos-delay={100}>
+        <Stack data-aos={`fade-slide-up`} data-aos-delay={100} gap={`0.5rem`}>
           <p>Theme</p>
           <div>
             •{` `}
             <a
               href={`https://open.cruip.com`}
-              target={`_blank`}
               rel={`noreferrer`}
+              target={`_blank`}
             >
               open.cruip.com
             </a>
             {` `}•
           </div>
         </Stack>
-        <Stack gap={`0.5rem`} data-aos={`fade-slide-up`} data-aos-delay={100}>
+        <Stack data-aos={`fade-slide-up`} data-aos-delay={100} gap={`0.5rem`}>
           <p>Images</p>
           <div>
             •{` `}
             <a
               href={`https://www.pexels.com`}
-              target={`_blank`}
               rel={`noreferrer`}
+              target={`_blank`}
             >
               www.pexels.com
             </a>
             {` `}•
           </div>
         </Stack>
-        <Stack gap={`0.5rem`} data-aos={`fade-slide-up`} data-aos-delay={`200`}>
+        <Stack data-aos={`fade-slide-up`} data-aos-delay={`200`} gap={`0.5rem`}>
           <p>Special thanks to</p>
           <p
             css={css`

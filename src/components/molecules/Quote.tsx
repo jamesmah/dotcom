@@ -37,20 +37,19 @@ const Quote = ({
         `}
       >
         {!imageLoaded && (
-          <LazyLoad once offset={500}>
+          <LazyLoad offset={500} once>
             <img
-              src={data.image}
               css={`
                 display: none;
               `}
               onLoad={() => setImageLoaded(true)}
+              src={data.image}
             />
           </LazyLoad>
         )}
         {imageLoaded && (
           <>
             <div
-              data-aos={`fade-${textAlign}`}
               css={css`
                 position: absolute;
                 top: 0;
@@ -61,9 +60,9 @@ const Quote = ({
                 background-repeat: no-repeat;
                 background-size: cover;
               `}
+              data-aos={`fade-${textAlign}`}
             />
             <div
-              data-aos={`fade-slide-${textAlignOpposite}`}
               css={css`
                 position: absolute;
                 backdrop-filter: blur(2px);
@@ -79,6 +78,7 @@ const Quote = ({
                   ${textAlignOpposite}: 15%;
                 }
               `}
+              data-aos={`fade-slide-${textAlignOpposite}`}
             >
               <div
                 css={`
@@ -89,7 +89,6 @@ const Quote = ({
                 `}
               >
                 <Link
-                  to={`/article/${data.slug}`}
                   css={css`
                     padding: 1rem;
                     ${`margin-${textAlign}`}: -0.5rem;
@@ -116,6 +115,7 @@ const Quote = ({
                       );
                     }
                   `}
+                  to={`/article/${data.slug}`}
                 >
                   {textAlign === `right` ? `❯` : `❮`}
                 </Link>

@@ -15,9 +15,9 @@ const Home = () => {
       <Stack gap={`2rem`}>
         {allQuotes.map((quote, index) => (
           <Quote
+            data={quote}
             key={quote.slug}
             textAlign={index % 2 === 0 ? `right` : `left`}
-            data={quote}
           />
         ))}
       </Stack>
@@ -29,11 +29,11 @@ const Home = () => {
       >
         <div data-aos={`fade-right`} data-aos-offset={0}>
           <Link
-            to={`/blog#top`}
             css={`
               margin: 0 2rem;
               font-size: 1.25rem;
             `}
+            to={`/blog#top`}
           >
             Go to Blog ❯
           </Link>

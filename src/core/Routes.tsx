@@ -21,11 +21,11 @@ const Routes = () => {
 
   return (
     <Switch>
-      <Route path={`/`} exact component={Home} />
-      <Route path={`/blog`} exact component={Blog} />
-      <Route path={`/article/:id`} exact component={Article} />
-      <Route path={`/about`} exact component={ComingSoon} />
-      <Route path={`/credits`} exact component={Credits} />
+      <Route component={Home} exact path={`/`} />
+      <Route component={Blog} exact path={`/blog`} />
+      <Route component={Article} exact path={`/article/:id`} />
+      <Route component={ComingSoon} exact path={`/about`} />
+      <Route component={Credits} exact path={`/credits`} />
       <Route component={PageNotFound} />
     </Switch>
   )

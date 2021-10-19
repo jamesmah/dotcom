@@ -5,11 +5,11 @@ import data from "."
 const Page = () => {
   return (
     <Stack
-      gap={`1rem`}
-      data-aos={`fade`}
       css={`
         padding-top: 1rem;
       `}
+      data-aos={`fade`}
+      gap={`1rem`}
     >
       <blockquote>
         <q>
@@ -80,17 +80,17 @@ const Page = () => {
 
       <a
         href={`https://youtu.be/bCMkhCV2HWE`}
-        target={`_blank`}
         rel={`noreferrer`}
+        target={`_blank`}
       >
         🔗&nbsp;&nbsp;MAKE A DAMN SCHEDULE - Powerful Motivational Video |
         Jordan Peterson
       </a>
 
       <ImageAuthor
-        image={data.image}
-        authorName={`Daria Shevtsova`}
         authorLink={`https://www.pexels.com/@daria`}
+        authorName={`Daria Shevtsova`}
+        image={data.image}
         imageLink={`https://www.pexels.com/photo/macbook-air-beside-notebook-and-camera-916335/`}
       />
     </Stack>
