@@ -115,7 +115,7 @@ const Quote = ({
                       );
                     }
                   `}
-                  to={`/article/${data.slug}`}
+                  to={`/${data.slug}`}
                 >
                   {textAlign === `right` ? `❯` : `❮`}
                 </Link>

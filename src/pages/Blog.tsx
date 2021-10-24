@@ -25,11 +25,11 @@ const Blog = ({ location }: RouteComponentProps) => {
     >
       <Stack gap={`5rem`}>
         <Stack gap={`1rem`}>
-          <h1 data-aos={`fade`}>
+          {/* <h1 data-aos={`fade`}>
             {(typeof selectedCategory === `string` &&
               Object.values(Category).find((c) => c === selectedCategory)) ||
               `All Articles`}
-          </h1>
+          </h1> */}
 
           <div
             css={css`
@@ -91,7 +91,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                       query: { ...parsed, category: category },
                     })}
                   >
-                    {key}
+                    {category}
                   </Link>
                 </Fragment>
               ))}
@@ -136,7 +136,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                       css={css`
                         color: ${({ theme }) => theme.palette.light[1]};
                       `}
-                      to={`article/${article.slug}#top`}
+                      to={`/${article.slug}#top`}
                     >
                       {article.title}
                     </Link>
@@ -148,7 +148,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                     css={css`
                       color: ${({ theme }) => theme.palette.light[1]};
                     `}
-                    to={`article/${article.slug}#top`}
+                    to={`/${article.slug}#top`}
                   >
                     <blockquote>
                       <q>{article.quote}</q>
@@ -156,7 +156,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                   </Link>
                 )}
 
-                <Link to={`article/${article.slug}#top`}>
+                <Link to={`/${article.slug}#top`}>
                   <div
                     css={`
                       position: relative;
@@ -182,7 +182,7 @@ const Blog = ({ location }: RouteComponentProps) => {
 
                 {article.excerpt && <div>{article.excerpt}</div>}
                 <div data-aos={`fade-left`} data-aos-offset={0}>
-                  <Link to={`/article/${article.slug}#top`}>Read more ❯</Link>
+                  <Link to={`/${article.slug}#top`}>Read more ❯</Link>
                 </div>
               </Stack>
             ))}

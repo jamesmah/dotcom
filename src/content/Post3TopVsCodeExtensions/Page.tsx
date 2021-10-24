@@ -22,7 +22,8 @@ const Page = () => (
   >
     <p>
       Here’s my list of the most useful Visual Studio Code extensions that you
-      can find today to improve your efficiency and productivity.
+      can find today to improve your efficiency and productivity for frontend
+      web development.
     </p>
 
     <br />

@@ -90,7 +90,7 @@ const Header = () => {
             <div>Links</div>
             <Stack as={`ul`} className={`list-reset`}>
               <li>
-                <StyledLink to={`/blog#top`}>Blog</StyledLink>
+                <StyledLink to={`/#top`}>Home</StyledLink>
               </li>
               <li>
                 <StyledLink to={`/about#top`}>About</StyledLink>
