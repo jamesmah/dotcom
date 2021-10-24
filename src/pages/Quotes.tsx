@@ -5,7 +5,7 @@ import Quote from "../components/molecules/Quote"
 import allArticles from "../content/allArticles"
 import { Category } from "../types"
 
-const Home = () => {
+const Quotes = () => {
   const allQuotes = allArticles.filter(
     (article) => article.category === Category.Quote
   )
@@ -43,4 +43,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Quotes
