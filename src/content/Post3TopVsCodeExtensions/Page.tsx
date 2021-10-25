@@ -20,11 +20,7 @@ const Page = () => (
     data-aos={`fade`}
     gap={`1rem`}
   >
-    <p>
-      Here’s my list of the most useful Visual Studio Code extensions that you
-      can find today to improve your efficiency and productivity for frontend
-      web development.
-    </p>
+    <p>{data.excerpt}</p>
 
     <br />
 
@@ -225,18 +221,22 @@ const Page = () => (
 
     <br />
 
-    <h3>9. Turbo Console Log</h3>
+    <h3>9. javascript console utils</h3>
     <p>
       Log everything! This extension just makes logging a little faster in every
       way. Logging a variable without context usually makes it very difficult to
-      read, and this extension automatically adds the context of the file and
-      function your variable is in. On top of that, you can easily comment,
-      uncomment or delete all of the <code>console.log</code> statements in your
-      file.
+      read, and this extension automatically adds the variable name as a string
+      in front of its value. On top of that, you can easily delete all of the
+      {` `}
+      <code>console.log</code> statements in your file. I prefer this over the
+      more popular <code>Turbo Console Log</code> extension because the latter
+      tries to be smart about its placement (attempts to place it outside of the
+      function block) but sometimes fails miserably. This extension just places
+      the console.log statement on the next line. Simple.
     </p>
     <img src={image09} />
     <a
-      href={`https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log`}
+      href={`https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils`}
       rel={`noreferrer`}
       target={`_blank`}
     >

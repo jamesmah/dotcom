@@ -11,10 +11,7 @@ const Page = () => {
       data-aos={`fade`}
       gap={`1rem`}
     >
-      <div>
-        Welcome to the first post on my website blog. Hope to see you again in
-        the future.
-      </div>
+      <p>{data.excerpt}</p>
 
       <ImageAuthor
         authorLink={`https://www.pexels.com/@pixabay`}
