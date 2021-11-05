@@ -50,7 +50,7 @@ const Page = () => (
       about improving readability, and once you start using this you will wonder
       how you ever coded without it. Interestingly the first version of this
       extension is still being used much more widely than this updated version
-      even with the improved performance. Guess you can’t stop the momentum.
+      even with the improved performance. Guess you can't stop the momentum.
     </p>
     <img src={image02} />
     <a
@@ -163,12 +163,12 @@ const Page = () => (
 
     <h3>6. Prettier</h3>
     <p>
-      I don’t think it is an understatement when I say that Prettier has saved
+      I don't think it is an understatement when I say that Prettier has saved
       countless hours, possibly days or even weeks of my life. If you care about
       how tidy your code is to the last detail (which I believe most programmers
       do), this extension takes care of most of the little things for you, from
-      indentation to semicolons and trailing commas. And while we’re on the
-      topic of semicolons, no we don’t need it.
+      indentation to semicolons and trailing commas. And while we're on the
+      topic of semicolons, no we don't need it.
     </p>
     <img src={image06} />
     <a
@@ -268,7 +268,7 @@ const Page = () => (
 
     <p>
       While this is my current list of preferred extensions, the tools that you
-      should use to code is highly dependent on the project that you’re working
+      should use to code is highly dependent on the project that you're working
       on and your personal preference. On top of that, with the current pace of
       software development, half the extensions on this list might already be
       outdated by the time you are reading this! Rather than being a defining

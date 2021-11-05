@@ -10,7 +10,7 @@ const data: ArticleData = {
   quote: (
     <>
       A schedule is not a prison. Set the schedule so that you have the day that
-      you want. Set it up so it’s the best possible day you could have.
+      you want. Set it up so it's the best possible day you could have.
     </>
   ),
   image,

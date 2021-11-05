@@ -15,11 +15,11 @@ const Page = () => (
       think. There are many things that we think we want in life, such as fame,
       wealth, recognition, success. But have you ever noticed, that when we
       achieve some of those major life goals, we get ecstatic for just a brief
-      moment? And before you know it we’ve moved on to the next thing.
+      moment? And before you know it we've moved on to the next thing.
     </p>
     <p>
       I have been lucky enough to have stumbled upon one of the most impactful
-      TED talks that I’ve watched in my life. Presented by Robert Waldinger, a
+      TED talks that I've watched in my life. Presented by Robert Waldinger, a
       psychiatrist and Professor at Harvard Medical School. He shares his
       findings from the Grant Study, a longitudinal study on adult happiness
       that has been running continuously since 1938.

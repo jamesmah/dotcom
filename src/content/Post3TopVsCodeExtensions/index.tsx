@@ -11,7 +11,7 @@ const data: ArticleData = {
   image,
   excerpt: (
     <>
-      Here’s my list of the most useful Visual Studio Code extensions that you
+      Here's my list of the most useful Visual Studio Code extensions that you
       can find today to improve your efficiency and productivity for frontend
       web development.
     </>

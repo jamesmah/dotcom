@@ -14,20 +14,20 @@ const Page = () => {
       <blockquote>
         <q>
           Specify your damn goals because how are you going to hit something if
-          you don’t know what it is? That isn’t going to happen. And often
-          people won’t specify their goals too because they don’t like to
+          you don't know what it is? That isn't going to happen. And often
+          people won't specify their goals too because they don't like to
           specify conditions for failure. So if you keep yourself all vague and
-          foggy, which is real easy, because that’s just a matter of not doing
-          as well, then you don’t know when you fail. And people might say,
-          “Well I really don’t want to know when I fail because that’s painful,
-          so I’ll keep myself blind about when I fail”. That’s fine except
-          you’ll fail all the time then. You just won’t know it until you fail
-          so badly that you’re done. And that can easily happen by the time
-          you’re forty.
+          foggy, which is real easy, because that's just a matter of not doing
+          as well, then you don't know when you fail. And people might say,
+          “Well I really don't want to know when I fail because that's painful,
+          so I'll keep myself blind about when I fail”. That's fine except
+          you'll fail all the time then. You just won't know it until you fail
+          so badly that you're done. And that can easily happen by the time
+          you're forty.
         </q>
       </blockquote>
 
-      <p>If that didn’t wake you up, I don’t know what will.</p>
+      <p>If that didn't wake you up, I don't know what will.</p>
 
       <p>
         This post was rather hard to write in a way because almost every
@@ -35,13 +35,13 @@ const Page = () => {
         post. His views on human psychology and society may be rather
         controversial to some. However, if you were to go a little deeper into
         his rationale, they would start to appear quite dangerously logical,
-        even if some ideas aren’t entirely practical today. Regardless of
+        even if some ideas aren't entirely practical today. Regardless of
         whether I agree or disagree with some of his viewpoints, Jordan Peterson
         has inspired me to think differently from before, for the better.
       </p>
 
       <p>
-        The original words of today’s quote were a little harsher and more
+        The original words of today's quote were a little harsher and more
         direct in his lecture, so I changed the wording just slightly to capture
         the essence of what he was saying in a more subtle manner,
       </p>
@@ -62,8 +62,8 @@ const Page = () => {
       <p>
         Guilt and the feeling of hopelessness are two huge enemies of
         motivation, and a way to avoid that is by building small wins throughout
-        your entire journey. If you’ve never been able to sit down and study for
-        more than twenty minutes, scheduling 5 hours of study a day isn’t going
+        your entire journey. If you've never been able to sit down and study for
+        more than twenty minutes, scheduling 5 hours of study a day isn't going
         to work. Try adding a few minutes a day, and if you continuously achieve
         that it is going to loop back positively and spiral you upwards.
       </p>
@@ -71,7 +71,7 @@ const Page = () => {
       <p>
         You are not your own servant. You have to negotiate with yourself to
         find the right amount of productivity and also have a good life, a life
-        that you’d like to have. There has to be a balance between
+        that you'd like to have. There has to be a balance between
         responsibilities, obligations and doing what you enjoy. With the right
         ratio between them, doing what you enjoy might feel even better than
         before since would be compounded with a sense of reward and

@@ -35,7 +35,7 @@
       }
     ],
     "react/jsx-sort-props": ["warn"],
-    "react/no-unescaped-entities": ["warn"],
+    "react/no-unescaped-entities": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "sort-imports": [

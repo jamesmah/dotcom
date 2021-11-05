@@ -12,7 +12,7 @@ const data: ArticleData = {
   excerpt: (
     <>
       There are probably too many ways to style your React components, and if
-      you haven’t had enough of them, here’s yet another one to add to your
+      you haven't had enough of them, here's yet another one to add to your
       list. It is far from being mainstream but might just be perfect for your
       smaller projects.
     </>

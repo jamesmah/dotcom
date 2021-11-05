@@ -9,8 +9,8 @@ const data: ArticleData = {
   title: ``,
   quote: (
     <>
-      Anyone can work hard when they feel motivated. It’s the ability to keep
-      going when work isn’t exciting that makes the difference
+      Anyone can work hard when they feel motivated. It's the ability to keep
+      going when work isn't exciting that makes the difference
     </>
   ),
   image,
