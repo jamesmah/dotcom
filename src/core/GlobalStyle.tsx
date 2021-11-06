@@ -116,9 +116,14 @@ const GlobalStyle = styled.createGlobalStyle`
     background-color: ${({ theme }) => theme.palette.dark[3]};
   }
 
+  ul,
+  ol {
+    margin: 0;
+  }
+
   .list-reset {
     list-style: none;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 
     li {
@@ -133,10 +138,6 @@ const GlobalStyle = styled.createGlobalStyle`
     padding: 0;
     cursor: pointer;
     color: inherit;
-  }
-
-  .no-margin {
-    margin: 0;
   }
 `
 export default GlobalStyle

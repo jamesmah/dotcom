@@ -25,12 +25,6 @@ const Blog = ({ location }: RouteComponentProps) => {
     >
       <Stack gap={`5rem`}>
         <Stack gap={`1rem`}>
-          {/* <h1 data-aos={`fade`}>
-            {(typeof selectedCategory === `string` &&
-              Object.values(Category).find((c) => c === selectedCategory)) ||
-              `All Articles`}
-          </h1> */}
-
           <div
             css={css`
               display: flex;
@@ -68,7 +62,7 @@ const Blog = ({ location }: RouteComponentProps) => {
             </Link>
             {Object.entries(Category)
               .filter(
-                ([key, category]) =>
+                ([_, category]) =>
                   category !== Category.None &&
                   articles.some((article) => category === article.category)
               )
@@ -97,7 +91,6 @@ const Blog = ({ location }: RouteComponentProps) => {
               ))}
           </div>
         </Stack>
-
         <Fragment key={location.search}>
           {articles
             .filter(
@@ -129,7 +122,6 @@ const Blog = ({ location }: RouteComponentProps) => {
                     <CategoryPills categories={[article.category]} />
                   )}
                 </div>
-
                 {article.title && (
                   <h3>
                     <Link
@@ -142,7 +134,6 @@ const Blog = ({ location }: RouteComponentProps) => {
                     </Link>
                   </h3>
                 )}
-
                 {article.quote && (
                   <Link
                     css={css`
@@ -155,7 +146,6 @@ const Blog = ({ location }: RouteComponentProps) => {
                     </blockquote>
                   </Link>
                 )}
-
                 <Link to={`/${article.slug}#top`}>
                   <div
                     css={`
@@ -179,7 +169,6 @@ const Blog = ({ location }: RouteComponentProps) => {
                     </div>
                   </div>
                 </Link>
-
                 {article.excerpt && <div>{article.excerpt}</div>}
                 <div data-aos={`fade-left`} data-aos-offset={0}>
                   <Link to={`/${article.slug}#top`}>Read more ❯</Link>

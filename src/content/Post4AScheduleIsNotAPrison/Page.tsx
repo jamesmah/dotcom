@@ -26,9 +26,7 @@ const Page = () => {
           you're forty.
         </q>
       </blockquote>
-
       <p>If that didn't wake you up, I don't know what will.</p>
-
       <p>
         This post was rather hard to write in a way because almost every
         sentence that Jordan Peterson said in this lecture deserves its own
@@ -39,17 +37,14 @@ const Page = () => {
         whether I agree or disagree with some of his viewpoints, Jordan Peterson
         has inspired me to think differently from before, for the better.
       </p>
-
       <p>
         The original words of today's quote were a little harsher and more
         direct in his lecture, so I changed the wording just slightly to capture
         the essence of what he was saying in a more subtle manner,
       </p>
-
       <blockquote data-aos={`fade-right`}>
         <q>{data.quote}</q>
       </blockquote>
-
       <p>
         People often start by creating schedules that are often difficult,
         unrealistic or perhaps impossible to achieve. Schedules are meant to
@@ -58,7 +53,6 @@ const Page = () => {
         Instead of planning our path to success, we might have only set up
         ourselves for failure from day one.
       </p>
-
       <p>
         Guilt and the feeling of hopelessness are two huge enemies of
         motivation, and a way to avoid that is by building small wins throughout
@@ -67,7 +61,6 @@ const Page = () => {
         to work. Try adding a few minutes a day, and if you continuously achieve
         that it is going to loop back positively and spiral you upwards.
       </p>
-
       <p>
         You are not your own servant. You have to negotiate with yourself to
         find the right amount of productivity and also have a good life, a life
@@ -77,7 +70,6 @@ const Page = () => {
         before since would be compounded with a sense of reward and
         satisfaction.
       </p>
-
       <a
         href={`https://youtu.be/bCMkhCV2HWE`}
         rel={`noreferrer`}
@@ -86,13 +78,7 @@ const Page = () => {
         🔗&nbsp;&nbsp;MAKE A DAMN SCHEDULE - Powerful Motivational Video |
         Jordan Peterson
       </a>
-
-      <ImageAuthor
-        authorLink={`https://www.pexels.com/@daria`}
-        authorName={`Daria Shevtsova`}
-        image={data.image}
-        imageLink={`https://www.pexels.com/photo/macbook-air-beside-notebook-and-camera-916335/`}
-      />
+      <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
     </Stack>
   )
 }

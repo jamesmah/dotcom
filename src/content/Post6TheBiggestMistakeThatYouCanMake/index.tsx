@@ -14,6 +14,13 @@ const data: ArticleData = {
     </>
   ),
   image,
+  imageDetails: {
+    author: {
+      name: `Eberhard Grossgasteiger`,
+      link: `https://www.pexels.com/@eberhardgross`,
+    },
+    link: `https://www.pexels.com/photo/man-standing-on-top-of-rock-at-daytime-673018/`,
+  },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),
 }

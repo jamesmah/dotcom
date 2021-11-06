@@ -25,6 +25,7 @@
       }
     ],
     "jsx-a11y/alt-text": "off",
+    "jsx-a11y/iframe-has-title": "off",
     "no-console": ["warn"],
     "react-hooks/exhaustive-deps": "off",
     "react/jsx-curly-brace-presence": [
@@ -32,6 +33,12 @@
       {
         "children": "never",
         "props": "always"
+      }
+    ],
+    "react/jsx-newline": [
+      "warn",
+      {
+        "prevent": true
       }
     ],
     "react/jsx-sort-props": ["warn"],

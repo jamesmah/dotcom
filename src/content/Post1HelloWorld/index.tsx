@@ -9,6 +9,13 @@ const data: ArticleData = {
   title: `Hello World!`,
   quote: ``,
   image,
+  imageDetails: {
+    author: {
+      name: `Pixabay`,
+      link: `https://www.pexels.com/@pixabay`,
+    },
+    link: `https://www.pexels.com/photo/sky-earth-space-working-2156/`,
+  },
   excerpt: (
     <>
       Welcome to the first post on my website blog. Hope to see you again in the

@@ -8,6 +8,14 @@ export enum Category {
   Leisure = `Leisure`,
 }
 
+export interface ImageDetails {
+  author: {
+    name: string
+    link: string
+  }
+  link: string
+}
+
 export interface ArticleData {
   slug: string
   timeStamp: Date
@@ -15,6 +23,7 @@ export interface ArticleData {
   title: React.ReactNode
   quote: React.ReactNode
   image: string
+  imageDetails: ImageDetails
   excerpt: React.ReactNode
   Page: LazyExoticComponent<() => JSX.Element>
 }

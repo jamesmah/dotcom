@@ -29,7 +29,7 @@ const Page = () => (
       <i>Good relationships keep us happier and healthier</i>.
     </p>
     <p>Three important lessons learned from the study:</p>
-    <ul className={`no-margin`}>
+    <ul>
       <li>Social connections are good, loneliness kills</li>
       <li>Quality of your close relationships matters</li>
       <li>Close relationships protect our bodies and brains</li>
@@ -52,12 +52,7 @@ const Page = () => (
       🔗&nbsp;&nbsp;Robert Waldinger: What makes a good life? Lessons from the
       longest study on happiness | TED
     </a>
-    <ImageAuthor
-      authorLink={`https://www.pexels.com/@francesco-ungaro`}
-      authorName={`Francesco Ungaro`}
-      image={data.image}
-      imageLink={`https://www.pexels.com/photo/hot-air-ballons-in-the-sky-2325446/`}
-    />
+    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
   </Stack>
 )
 

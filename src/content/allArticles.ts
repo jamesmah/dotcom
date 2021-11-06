@@ -7,10 +7,12 @@ import Post5StyledComponentsCssProps from "./Post5StyledComponentsCssProps"
 import Post6TheBiggestMistakeThatYouCanMake from "./Post6TheBiggestMistakeThatYouCanMake"
 import Post7FreeOnlineTeamBuildingGames from "./Post7FreeOnlineTeamBuildingGames"
 import Post8AnyoneCanWorkHard from "./Post8AnyoneCanWorkHard"
+import Post9TheThreeSecretsOfResilientPeople from "./Post9ThreeSecretsOfResilientPeople"
 
 export const allDrafts: ArticleData[] = []
 
 const allArticles = [
+  Post9TheThreeSecretsOfResilientPeople,
   Post8AnyoneCanWorkHard,
   Post7FreeOnlineTeamBuildingGames,
   Post6TheBiggestMistakeThatYouCanMake,

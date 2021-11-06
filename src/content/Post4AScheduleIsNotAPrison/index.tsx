@@ -14,6 +14,13 @@ const data: ArticleData = {
     </>
   ),
   image,
+  imageDetails: {
+    author: {
+      name: `Daria Shevtsova`,
+      link: `https://www.pexels.com/@daria`,
+    },
+    link: `https://www.pexels.com/photo/macbook-air-beside-notebook-and-camera-916335/`,
+  },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),
 }

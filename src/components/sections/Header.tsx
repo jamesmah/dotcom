@@ -56,7 +56,6 @@ const Header = () => {
             >
               JM
             </Link>
-
             <Hamburger isActive={isActive} toggleIsActive={toggleIsActive} />
           </Container>
         </div>

@@ -2,25 +2,17 @@ import ImageAuthor from "../../components/elements/ImageAuthor"
 import Stack from "../../components/elements/Stack"
 import data from "."
 
-const Page = () => {
-  return (
-    <Stack
-      css={`
-        padding-top: 1rem;
-      `}
-      data-aos={`fade`}
-      gap={`1rem`}
-    >
-      <p>{data.excerpt}</p>
-
-      <ImageAuthor
-        authorLink={`https://www.pexels.com/@pixabay`}
-        authorName={`Pixabay`}
-        image={data.image}
-        imageLink={`https://www.pexels.com/photo/sky-earth-space-working-2156/`}
-      />
-    </Stack>
-  )
-}
+const Page = () => (
+  <Stack
+    css={`
+      padding-top: 1rem;
+    `}
+    data-aos={`fade`}
+    gap={`1rem`}
+  >
+    <p>{data.excerpt}</p>
+    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+  </Stack>
+)
 
 export default Page

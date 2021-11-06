@@ -9,6 +9,13 @@ const data: ArticleData = {
   title: `My Top 10 Visual Studio Code Extensions`,
   quote: ``,
   image,
+  imageDetails: {
+    author: {
+      name: `José Oliveira`,
+      link: `https://www.pexels.com/@jose-oliveira-32884059`,
+    },
+    link: `https://www.pexels.com/photo/wood-landscape-water-summer-7028840/`,
+  },
   excerpt: (
     <>
       Here's my list of the most useful Visual Studio Code extensions that you

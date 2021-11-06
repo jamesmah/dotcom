@@ -9,6 +9,13 @@ const data: ArticleData = {
   title: `Free Online Team Building Games`,
   quote: ``,
   image,
+  imageDetails: {
+    author: {
+      name: `Pixabay`,
+      link: `https://www.pexels.com/@pixabay`,
+    },
+    link: `https://www.pexels.com/photo/close-up-photography-of-yellow-green-red-and-brown-plastic-cones-on-white-lined-surface-163064/`,
+  },
   excerpt: (
     <>
       Here's some high quality online games for team building or just catching

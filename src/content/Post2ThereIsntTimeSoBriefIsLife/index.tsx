@@ -15,6 +15,13 @@ const data: ArticleData = {
     </>
   ),
   image,
+  imageDetails: {
+    author: {
+      name: `Francesco Ungaro`,
+      link: `https://www.pexels.com/@francesco-ungaro`,
+    },
+    link: `https://www.pexels.com/photo/hot-air-ballons-in-the-sky-2325446/`,
+  },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),
 }

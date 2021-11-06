@@ -1,11 +1,9 @@
-import ImageAuthor from "../../components/elements/ImageAuthor"
 import Stack from "../../components/elements/Stack"
 import amongus from "./images/amongus.jpg"
 import codenames from "./images/codenames.jpg"
 import gartic from "./images/gartic.jpg"
 import geoguessr from "./images/geoguessr.png"
 import scattergories from "./images/scattergories.jpg"
-import data from "."
 
 const Page = () => (
   <Stack
@@ -27,9 +25,7 @@ const Page = () => (
       here are all the ones that I had a lot of fun playing that also have
       high-quality presentation and UI.
     </p>
-
     <br />
-
     <h3>1. Among Us</h3>
     <p>
       One of the most popular games during the pandemic last year, I'd be
@@ -55,9 +51,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to Among Us
     </a>
-
     <br />
-
     <h3>2. Codenames</h3>
     <p>
       Probably in the arsenal of every boardgames lover, this game is really
@@ -76,14 +70,11 @@ const Page = () => (
       If you love this game and would like to try something similar, I would
       recommend giving Decrypto a go.
     </p>
-
     <img src={codenames} />
     <a href={`https://codenames.game/`} rel={`noreferrer`} target={`_blank`}>
       🔗&nbsp;&nbsp;Link to Codenames
     </a>
-
     <br />
-
     <h3>3. Gartic.io</h3>
     <p>
       A light fun online version of Pictionary. Works great for larger groups
@@ -92,11 +83,7 @@ const Page = () => (
       is not enough, you can save a custom list of words in your account too.
     </p>
     <p>Similar alternatives:</p>
-    <ul
-      css={`
-        margin-top: 0;
-      `}
-    >
+    <ul>
       <li>https://skribbl.io/</li>
       <li>https://sketchful.io/</li>
     </ul>
@@ -104,9 +91,7 @@ const Page = () => (
     <a href={`https://gartic.io/`} rel={`noreferrer`} target={`_blank`}>
       🔗&nbsp;&nbsp;Link to Gartic.io
     </a>
-
     <br />
-
     <h3>4. GeoGuessr</h3>
     <p>
       If you like travelling, this is the game for you. Even though this game
@@ -124,9 +109,7 @@ const Page = () => (
     <a href={`https://www.geoguessr.com/`} rel={`noreferrer`} target={`_blank`}>
       🔗&nbsp;&nbsp;Link to GeoGuessr
     </a>
-
     <br />
-
     <h3>5. Really Boring Website</h3>
     <p>
       Contrary to its name, this site might actually fix your boredom instead.
@@ -151,9 +134,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to Really Boring Website
     </a>
-
     <br />
-
     <p>
       Playing games together with the people you know and care about is a great
       way to reduce stress and have a good laugh together. It has long lasting
@@ -162,15 +143,6 @@ const Page = () => (
       matter how simple or complex these games are, they can give you enjoyable
       learning experiences and increase creativity along the way.
     </p>
-
-    <br />
-
-    <ImageAuthor
-      authorLink={`https://www.pexels.com/@pixabay`}
-      authorName={`Pixabay`}
-      image={data.image}
-      imageLink={`https://www.pexels.com/photo/close-up-photography-of-yellow-green-red-and-brown-plastic-cones-on-white-lined-surface-163064/`}
-    />
   </Stack>
 )
 

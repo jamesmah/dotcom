@@ -14,6 +14,13 @@ const data: ArticleData = {
     </>
   ),
   image,
+  imageDetails: {
+    author: {
+      name: `Pixabay`,
+      link: `https://www.pexels.com/@pixabay`,
+    },
+    link: `https://www.pexels.com/photo/brown-and-white-stallions-running-in-a-field-52500/`,
+  },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),
 }

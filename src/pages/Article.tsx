@@ -39,7 +39,6 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
             )}
           </div>
           {article.title && <h3 data-aos={`fade`}>{article.title}</h3>}
-
           <Suspense fallback={null}>
             <Page />
           </Suspense>

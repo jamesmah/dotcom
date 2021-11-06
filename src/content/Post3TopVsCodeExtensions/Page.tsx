@@ -1,4 +1,3 @@
-import ImageAuthor from "../../components/elements/ImageAuthor"
 import Stack from "../../components/elements/Stack"
 import image01 from "./images/image01.gif"
 import image02 from "./images/image02.png"
@@ -21,9 +20,7 @@ const Page = () => (
     gap={`1rem`}
   >
     <p>{data.excerpt}</p>
-
     <br />
-
     <h3>1. Auto Rename Tag</h3>
     <p>
       A simple extension that renames the closing HTML/XML tag. You would think
@@ -41,9 +38,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>2. Bracket Pair Colorizer 2</h3>
     <p>
       Identifies matching brackets and colourizes them. This extension is all
@@ -60,9 +55,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>3. Code Runner</h3>
     <p>
       Run code snippets or files for most mainstream languages. For frontend web
@@ -90,9 +83,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>4. ESLint</h3>
     <p>Integrates ESLint into VS Code. Enough said.</p>
     <p>
@@ -138,9 +129,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>5. GitLens</h3>
     <p>
       Helps to visualize code history and authorship using Git. A tool that
@@ -158,9 +147,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>6. javascript console utils</h3>
     <p>
       Log everything! This extension just makes logging a little faster in every
@@ -182,9 +169,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>7. Prettier</h3>
     <p>
       I don't think it is an understatement when I say that Prettier has saved
@@ -202,9 +187,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>8. Sort JSON objects</h3>
     <p>
       Alphabetically sorts the keys in selected JSON objects. Similar to how
@@ -221,9 +204,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>9. stylelint</h3>
     <p>
       Even though this extension works best with standalone <code>.css</code> or
@@ -242,9 +223,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <h3>10. vscode-styled-components</h3>
     <p>
       If you use Styled Components you probably already have this extension
@@ -263,9 +242,7 @@ const Page = () => (
     >
       🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
     </a>
-
     <br />
-
     <p>
       While this is my current list of preferred extensions, the tools that you
       should use to code is highly dependent on the project that you're working
@@ -276,15 +253,6 @@ const Page = () => (
       inspiration and more options to some that are looking for new tools to add
       to their arsenal. Happy coding!
     </p>
-
-    <br />
-
-    <ImageAuthor
-      authorLink={`https://www.pexels.com/@jose-oliveira-32884059`}
-      authorName={`José Oliveira`}
-      image={data.image}
-      imageLink={`https://www.pexels.com/photo/wood-landscape-water-summer-7028840/`}
-    />
   </Stack>
 )
 

@@ -9,6 +9,13 @@ const data: ArticleData = {
   title: `The Better Way To Style Your React Components`,
   quote: ``,
   image,
+  imageDetails: {
+    author: {
+      name: `Steve Johnson`,
+      link: `https://www.pexels.com/@steve`,
+    },
+    link: `https://www.pexels.com/photo/multicolored-abstract-painting-1269968/`,
+  },
   excerpt: (
     <>
       There are probably too many ways to style your React components, and if
