@@ -161,7 +161,31 @@ const Page = () => (
 
     <br />
 
-    <h3>6. Prettier</h3>
+    <h3>6. javascript console utils</h3>
+    <p>
+      Log everything! This extension just makes logging a little faster in every
+      way. Logging a variable without context usually makes it very difficult to
+      read, and this extension automatically adds the variable name as a string
+      in front of its value. On top of that, you can easily delete all of the
+      {` `}
+      <code>console.log</code> statements in your file. I prefer this over the
+      more popular <code>Turbo Console Log</code> extension because the latter
+      tries to be smart about its placement (attempts to place it outside of the
+      function block) but sometimes fails miserably. This extension just places
+      the console.log statement on the next line. Simple.
+    </p>
+    <img src={image09} />
+    <a
+      href={`https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils`}
+      rel={`noreferrer`}
+      target={`_blank`}
+    >
+      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
+    </a>
+
+    <br />
+
+    <h3>7. Prettier</h3>
     <p>
       I don't think it is an understatement when I say that Prettier has saved
       countless hours, possibly days or even weeks of my life. If you care about
@@ -181,7 +205,7 @@ const Page = () => (
 
     <br />
 
-    <h3>7. Sort JSON objects</h3>
+    <h3>8. Sort JSON objects</h3>
     <p>
       Alphabetically sorts the keys in selected JSON objects. Similar to how
       sorted imports make life easier for everyone (less merge conflicts and
@@ -200,7 +224,7 @@ const Page = () => (
 
     <br />
 
-    <h3>8. stylelint</h3>
+    <h3>9. stylelint</h3>
     <p>
       Even though this extension works best with standalone <code>.css</code> or
       {` `}
@@ -213,30 +237,6 @@ const Page = () => (
     <img src={image08} />
     <a
       href={`https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint`}
-      rel={`noreferrer`}
-      target={`_blank`}
-    >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
-
-    <br />
-
-    <h3>9. javascript console utils</h3>
-    <p>
-      Log everything! This extension just makes logging a little faster in every
-      way. Logging a variable without context usually makes it very difficult to
-      read, and this extension automatically adds the variable name as a string
-      in front of its value. On top of that, you can easily delete all of the
-      {` `}
-      <code>console.log</code> statements in your file. I prefer this over the
-      more popular <code>Turbo Console Log</code> extension because the latter
-      tries to be smart about its placement (attempts to place it outside of the
-      function block) but sometimes fails miserably. This extension just places
-      the console.log statement on the next line. Simple.
-    </p>
-    <img src={image09} />
-    <a
-      href={`https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils`}
       rel={`noreferrer`}
       target={`_blank`}
     >
