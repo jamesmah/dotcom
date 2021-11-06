@@ -1,9 +1,6 @@
-const { override, addBabelPlugin, addWebpackAlias } = require(`customize-cra`)
+const { override, addBabelPlugin } = require(`customize-cra`)
 
 module.exports = override(
-  addWebpackAlias({
-    "@mui/styled-engine": `@mui/styled-engine-sc`,
-  }),
   addBabelPlugin([
     `babel-plugin-styled-components`,
     {
