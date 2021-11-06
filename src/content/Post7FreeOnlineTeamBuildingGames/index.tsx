@@ -5,7 +5,7 @@ import image from "./image.jpg"
 const data: ArticleData = {
   slug: `free-online-team-building-games`,
   timeStamp: new Date(`2021-11-05T21:46:52.327Z`),
-  category: Category.None,
+  category: Category.Leisure,
   title: `Free Online Team Building Games`,
   quote: ``,
   image,

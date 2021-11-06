@@ -5,6 +5,7 @@ export enum Category {
   Dev = `Software Development`,
   Quote = `Quotes`,
   Motivation = `Motivation`,
+  Leisure = `Leisure`,
 }
 
 export interface ArticleData {
