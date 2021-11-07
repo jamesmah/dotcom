@@ -2,7 +2,7 @@ import Stack from "../elements/Stack"
 import Header from "../sections/Header"
 import SVGBackground from "./layout-background.svg"
 
-const DefaultLayout = ({ children }: { children?: React.ReactNode }) => (
+const Layout = ({ children }: { children?: React.ReactNode }) => (
   <Stack
     css={`
       flex-grow: 1;
@@ -32,4 +32,4 @@ const DefaultLayout = ({ children }: { children?: React.ReactNode }) => (
   </Stack>
 )
 
-export default DefaultLayout
+export default Layout

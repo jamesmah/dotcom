@@ -8,7 +8,7 @@ import "./aos.scss"
 
 import AOS from "aos"
 import { Suspense, useEffect, useState } from "react"
-import DefaultLayout from "../components/layout/DefaultLayout"
+import DefaultLayout from "../components/layout/Layout"
 import Routes from "./Routes"
 
 const App = () => {

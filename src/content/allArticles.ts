@@ -2,6 +2,8 @@ import { ArticleData } from "../types"
 import Post10_The85PercentRule from "./Post10_The85PercentRule"
 import Post11_NonViolentCommunication from "./Post11_NonViolentCommunication"
 import Post12_ScheduleYourPriorities from "./Post12_ScheduleYourPriorities"
+import Post13_ThreeBreaksToTakeEveryDay from "./Post13_ThreeBreaksToTakeEveryDay"
+import Post14_GenesDoNotEliminate from "./Post14_GenesDoNotEliminate"
 import Post1_HelloWorld from "./Post1_HelloWorld"
 import Post2_ThereIsntTimeSoBriefIsLife from "./Post2_ThereIsntTimeSoBriefIsLife"
 import Post3_TopVsCodeExtensions from "./Post3_TopVsCodeExtensions"
@@ -27,6 +29,8 @@ const allArticles = [
   Post10_The85PercentRule,
   Post11_NonViolentCommunication,
   Post12_ScheduleYourPriorities,
+  Post13_ThreeBreaksToTakeEveryDay,
+  Post14_GenesDoNotEliminate,
 ].reverse()
 
 export default allArticles
