@@ -4,8 +4,8 @@ export enum Category {
   None = `No Category`,
   Dev = `Software Development`,
   Quote = `Quotes`,
-  Motivation = `Motivation`,
-  Leisure = `Leisure`,
+  Growth = `Personal Growth`,
+  Ideas = `Ideas`,
 }
 
 export interface ImageDetails {

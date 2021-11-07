@@ -5,7 +5,7 @@ import image from "./image.jpg"
 const data: ArticleData = {
   slug: `the-85-percent-rule`,
   timeStamp: new Date(`2021-11-07T00:18:15.792Z`),
-  category: Category.Motivation,
+  category: Category.Growth,
   title: `The 85 Percent Rule`,
   quote: ``,
   image,

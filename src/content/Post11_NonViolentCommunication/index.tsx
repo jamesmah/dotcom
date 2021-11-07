@@ -3,18 +3,18 @@ import { ArticleData, Category } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  slug: `three-secrets-of-resilient-people`,
-  timeStamp: new Date(`2021-11-06T12:15:50.642Z`),
+  slug: `non-violent-communication`,
+  timeStamp: new Date(`2021-11-07T00:18:15.792Z`),
   category: Category.Growth,
-  title: `Three Secrets Of Resilient People`,
+  title: `Non Violent Communication`,
   quote: ``,
   image,
   imageDetails: {
     author: {
-      name: `Oziel Gómez`,
-      link: `https://www.pexels.com/@ozgomz`,
+      name: `Min An`,
+      link: `https://www.pexels.com/@minan1398`,
     },
-    link: `https://www.pexels.com/photo/men-s-blue-leather-jacket-and-brown-backpack-868097/`,
+    link: `https://www.pexels.com/photo/monochrome-photo-of-couple-holding-hands-1004014/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

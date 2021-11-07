@@ -22,6 +22,7 @@ const Routes = () => {
   return (
     <Switch>
       <Route component={Blog} exact path={`/`} />
+      <Route component={Blog} exact path={`/blog`} />
       <Route component={Quotes} exact path={`/quotes`} />
       <Route component={ComingSoon} exact path={`/about`} />
       <Route component={Credits} exact path={`/credits`} />
