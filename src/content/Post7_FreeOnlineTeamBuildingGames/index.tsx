@@ -11,10 +11,10 @@ const data: ArticleData = {
   image,
   imageDetails: {
     author: {
-      name: `Pixabay`,
-      link: `https://www.pexels.com/@pixabay`,
+      name: `Pavel Chernonogov`,
+      link: `https://www.pexels.com/@watorious`,
     },
-    link: `https://www.pexels.com/photo/close-up-photography-of-yellow-green-red-and-brown-plastic-cones-on-white-lined-surface-163064/`,
+    link: `https://www.pexels.com/photo/man-welding-metal-bars-2381463/`,
   },
   excerpt: (
     <>

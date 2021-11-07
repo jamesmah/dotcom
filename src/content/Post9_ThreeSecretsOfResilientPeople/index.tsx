@@ -11,10 +11,10 @@ const data: ArticleData = {
   image,
   imageDetails: {
     author: {
-      name: `Анна Рыжкова`,
-      link: `https://www.pexels.com/@1585669`,
+      name: `Oziel Gómez`,
+      link: `https://www.pexels.com/@ozgomz`,
     },
-    link: `https://www.pexels.com/photo/person-rock-climbing-3077882/`,
+    link: `https://www.pexels.com/photo/men-s-blue-leather-jacket-and-brown-backpack-868097/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),
