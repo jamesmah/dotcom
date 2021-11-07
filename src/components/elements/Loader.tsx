@@ -1,6 +1,6 @@
-import { keyframes } from "styled-components"
+import { fadeAnimation, spinAnimation } from "../../utils/keyframes"
 
-const Loader = () => (
+const Loader = ({ fadeDuration = 1 }: { fadeDuration?: number }) => (
   <div
     css={`
       width: 6rem;
@@ -18,25 +18,10 @@ const Loader = () => (
         position: absolute;
         width: 100%;
         height: 100%;
-        animation: ${opacityAnimation} 10s ease;
+        animation: ${fadeAnimation} ${fadeDuration}s ease;
       `}
     />
   </div>
 )
-
-const spinAnimation = keyframes`
-  to {
-    transform: rotate(360deg);
-  }
-`
-
-const opacityAnimation = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`
 
 export default Loader

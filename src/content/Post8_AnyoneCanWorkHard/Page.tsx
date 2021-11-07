@@ -1,20 +1,14 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
-import Stack from "../../components/elements/Stack"
+import PageContainer from "../../components/elements/PageContainer"
 import data from "."
 
 const Page = () => (
-  <Stack
-    css={`
-      padding-top: 1rem;
-    `}
-    data-aos={`fade`}
-    gap={`1rem`}
-  >
+  <PageContainer>
     <blockquote data-aos={`fade-right`}>
       <q>{data.quote}</q>
     </blockquote>
     <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
-  </Stack>
+  </PageContainer>
 )
 
 export default Page

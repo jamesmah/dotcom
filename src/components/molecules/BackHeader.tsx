@@ -1,6 +1,7 @@
 import { Link, useHistory } from "react-router-dom"
 import styled from "styled-components"
 import { Breakpoint } from "../../theme"
+import { fadeAnimation } from "../../utils/keyframes"
 import Container from "../elements/Container"
 
 const StyledDiv = styled.div`
@@ -24,8 +25,8 @@ const BackHeader = ({ width }: { width?: Breakpoint }) => {
       $width={width}
       css={`
         display: flex;
+        animation: ${fadeAnimation} 1s ease;
       `}
-      data-aos={`fade`}
     >
       <StyledDiv
         as={useBrowserBack ? undefined : Link}

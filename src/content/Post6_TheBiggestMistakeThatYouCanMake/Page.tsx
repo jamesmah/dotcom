@@ -1,15 +1,9 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
-import Stack from "../../components/elements/Stack"
+import PageContainer from "../../components/elements/PageContainer"
 import data from "."
 
 const Page = () => (
-  <Stack
-    css={`
-      padding-top: 1rem;
-    `}
-    data-aos={`fade`}
-    gap={`1rem`}
-  >
+  <PageContainer>
     <p>
       Stumbled upon this quote in the first chapter of the book Soft Skills: The
       Software Developer's Life Manual by Jon Sonmez. I highly recommend this
@@ -66,7 +60,7 @@ const Page = () => (
       might be a good time to move on. And bring that cookie jar with you.
     </p>
     <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
-  </Stack>
+  </PageContainer>
 )
 
 export default Page

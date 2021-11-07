@@ -46,7 +46,7 @@ const Image = ({
               height: 100%;
             `}
           >
-            <Loader />
+            <Loader fadeDuration={5} />
           </div>
         </LazyLoad>
       )}

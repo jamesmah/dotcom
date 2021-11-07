@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import styled, { css } from "styled-components"
 import { useToggle } from "../../hooks/useToggle"
+import { fadeAnimation, fadeDownAnimation } from "../../utils/keyframes"
 import Container from "../elements/Container"
 import Hamburger from "../elements/Hamburger"
 import Stack from "../elements/Stack"
@@ -41,8 +42,8 @@ const Header = () => {
               justify-content: space-between;
               align-items: center;
               height: 5rem;
+              animation: ${fadeAnimation} 1s ease;
             `}
-            data-aos={`fade`}
           >
             <Link
               css={css`
@@ -74,9 +75,8 @@ const Header = () => {
               chroma(theme.palette.dark[1]).alpha(0.97).hex()};
             display: grid;
             place-items: center;
+            animation: ${fadeDownAnimation} 0.3s ease;
           `}
-          data-aos={`fade-down`}
-          data-aos-duration={`300`}
           onClick={toggleIsActive}
         >
           <Stack

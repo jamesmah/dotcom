@@ -1,15 +1,9 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
-import Stack from "../../components/elements/Stack"
+import PageContainer from "../../components/elements/PageContainer"
 import data from "."
 
 const Page = () => (
-  <Stack
-    css={`
-      padding-top: 1rem;
-    `}
-    data-aos={`fade`}
-    gap={`1rem`}
-  >
+  <PageContainer>
     <p>
       What is the secret to happiness and health? It might be simpler than you
       think. There are many things that we think we want in life, such as fame,
@@ -53,7 +47,7 @@ const Page = () => (
       longest study on happiness | TED
     </a>
     <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
-  </Stack>
+  </PageContainer>
 )
 
 export default Page

@@ -1,4 +1,4 @@
-import Stack from "../../components/elements/Stack"
+import PageContainer from "../../components/elements/PageContainer"
 import amongus from "./images/amongus.jpg"
 import codenames from "./images/codenames.jpg"
 import gartic from "./images/gartic.jpg"
@@ -6,13 +6,7 @@ import geoguessr from "./images/geoguessr.png"
 import scattergories from "./images/scattergories.jpg"
 
 const Page = () => (
-  <Stack
-    css={`
-      padding-top: 1rem;
-    `}
-    data-aos={`fade`}
-    gap={`1rem`}
-  >
+  <PageContainer>
     <p>
       Lockdowns are over, well mostly anyway. Though online games are no longer
       our only source of entertainment anymore, it's still a great way to have
@@ -143,7 +137,7 @@ const Page = () => (
       matter how simple or complex these games are, they can give you enjoyable
       learning experiences and increase creativity along the way.
     </p>
-  </Stack>
+  </PageContainer>
 )
 
 export default Page

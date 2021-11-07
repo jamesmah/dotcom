@@ -26,6 +26,7 @@ const App = () => {
     AOS.init({
       duration: 800,
       once: true,
+      offset: 50,
     })
   }, [])
 

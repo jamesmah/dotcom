@@ -1,16 +1,10 @@
-import Stack from "../../components/elements/Stack"
+import PageContainer from "../../components/elements/PageContainer"
 import image01 from "./images/image01.png"
 import image02 from "./images/image02.png"
 import data from "."
 
 const Page = () => (
-  <Stack
-    css={`
-      padding-top: 1rem;
-    `}
-    data-aos={`fade`}
-    gap={`1rem`}
-  >
+  <PageContainer>
     <p>{data.excerpt}</p>
     <p>Below is an example of the CSS prop in Styled Components:</p>
     <img src={image01} />
@@ -73,7 +67,7 @@ const Page = () => (
     >
       https://styled-components.com/docs/api#css-prop
     </a>
-  </Stack>
+  </PageContainer>
 )
 
 export default Page

@@ -1,4 +1,4 @@
-import Stack from "../../components/elements/Stack"
+import PageContainer from "../../components/elements/PageContainer"
 import image01 from "./images/image01.gif"
 import image02 from "./images/image02.png"
 import image03 from "./images/image03.gif"
@@ -12,13 +12,7 @@ import image10 from "./images/image10.gif"
 import data from "."
 
 const Page = () => (
-  <Stack
-    css={`
-      padding-top: 1rem;
-    `}
-    data-aos={`fade`}
-    gap={`1rem`}
-  >
+  <PageContainer>
     <p>{data.excerpt}</p>
     <br />
     <h3>1. Auto Rename Tag</h3>
@@ -253,7 +247,7 @@ const Page = () => (
       inspiration and more options to some that are looking for new tools to add
       to their arsenal. Happy coding!
     </p>
-  </Stack>
+  </PageContainer>
 )
 
 export default Page

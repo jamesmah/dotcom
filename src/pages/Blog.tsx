@@ -8,6 +8,7 @@ import Stack from "../components/elements/Stack"
 import CategoryPills from "../components/molecules/CategoryPills"
 import allArticles, { allDrafts } from "../content/allArticles"
 import { Category } from "../types"
+import { fadeLeftAnimation } from "../utils/keyframes"
 
 const Blog = ({ location }: RouteComponentProps) => {
   const parsed = queryString.parse(location.search)
@@ -47,7 +48,10 @@ const Blog = ({ location }: RouteComponentProps) => {
           >
             <Link
               className={selectedCategory ? undefined : `active`}
-              data-aos={`fade-left`}
+              css={`
+                opacity: 0;
+                animation: ${fadeLeftAnimation} 1s ease forwards;
+              `}
               to={queryString.stringifyUrl(
                 {
                   url: location.pathname,
@@ -69,8 +73,11 @@ const Blog = ({ location }: RouteComponentProps) => {
               .map(([key, category], index) => (
                 <Fragment key={key}>
                   <div
-                    data-aos={`fade-left`}
-                    data-aos-delay={(index * 2 + 1) * 50}
+                    css={`
+                      opacity: 0;
+                      animation: ${fadeLeftAnimation} 1s ease
+                        ${(index * 2 + 1) * 50}ms forwards;
+                    `}
                   >
                     |
                   </div>
@@ -78,8 +85,11 @@ const Blog = ({ location }: RouteComponentProps) => {
                     className={
                       selectedCategory === category ? `active` : undefined
                     }
-                    data-aos={`fade-left`}
-                    data-aos-delay={(index + 1) * 2 * 50}
+                    css={`
+                      opacity: 0;
+                      animation: ${fadeLeftAnimation} 1s ease
+                        ${(index + 1) * 2 * 50}ms forwards;
+                    `}
                     to={queryString.stringifyUrl({
                       url: location.pathname,
                       query: { ...parsed, category: category },
@@ -100,7 +110,6 @@ const Blog = ({ location }: RouteComponentProps) => {
             .map((article) => (
               <Stack
                 data-aos={`fade`}
-                data-aos-offset={100}
                 gap={`0.5rem`}
                 id={article.slug}
                 key={article.slug}
