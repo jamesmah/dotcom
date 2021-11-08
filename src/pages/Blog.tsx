@@ -15,7 +15,9 @@ const Blog = ({ location }: RouteComponentProps) => {
   const selectedTagKey = typeof parsed.tag === `string` ? parsed.tag : undefined
 
   const articles =
-    `draft` in parsed ? allDrafts.concat(allArticles) : allArticles
+    `draft` in parsed
+      ? allDrafts.concat(allArticles)
+      : allArticles.filter((a) => !a.tags.includes(Tag.WIP))
 
   return (
     <Container
