@@ -7,6 +7,8 @@ import Post14_GenesDoNotEliminate from "./Post14_GenesDoNotEliminate"
 import Post15_MostOfTheMistakeIMade from "./Post15_MostOfTheMistakeIMade"
 import Post16_EverythingAroundYouThatYouCallLife from "./Post16_EverythingAroundYouThatYouCallLife"
 import Post17_AtomicHabits from "./Post17_AtomicHabits"
+import Post18_ThreeQuestionsToAsk from "./Post18_ThreeQuestionsToAsk"
+import Post19_TipsForPublicSpeaking from "./Post19_TipsForPublicSpeaking"
 import Post1_HelloWorld from "./Post1_HelloWorld"
 import Post2_ThereIsntTimeSoBriefIsLife from "./Post2_ThereIsntTimeSoBriefIsLife"
 import Post3_TopVsCodeExtensions from "./Post3_TopVsCodeExtensions"
@@ -37,6 +39,8 @@ const allArticles = [
   Post15_MostOfTheMistakeIMade,
   Post16_EverythingAroundYouThatYouCallLife,
   Post17_AtomicHabits,
+  Post18_ThreeQuestionsToAsk,
+  Post19_TipsForPublicSpeaking,
 ].reverse()
 
 export default allArticles

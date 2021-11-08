@@ -1,11 +1,11 @@
 import { lazy } from "react"
-import { ArticleData, Category } from "../../types"
+import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `anyone-can-work-hard-when-they-feel-motivated`,
   timeStamp: new Date(`2021-11-06T00:59:12.773Z`),
-  category: Category.Quote,
+  tags: [Tag.Quote, Tag.WIP],
   title: ``,
   quote: (
     <>

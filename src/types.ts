@@ -1,7 +1,7 @@
 import React, { LazyExoticComponent } from "react"
 
-export enum Category {
-  None = `No Category`,
+export enum Tag {
+  WIP = `WIP`,
   Dev = `Software Development`,
   Quote = `Quotes`,
   Growth = `Personal Growth`,
@@ -19,7 +19,7 @@ export interface ImageDetails {
 export interface ArticleData {
   slug: string
   timeStamp: Date
-  category: Category
+  tags: Tag[]
   title: React.ReactNode
   quote: React.ReactNode
   image: string

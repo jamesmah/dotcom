@@ -1,11 +1,11 @@
 import { lazy } from "react"
-import { ArticleData, Category } from "../../types"
+import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `a-schedule-is-not-a-prison`,
   timeStamp: new Date(`2021-10-11T10:26:18.737Z`),
-  category: Category.Quote,
+  tags: [Tag.Quote],
   title: ``,
   quote: (
     <>

@@ -5,14 +5,14 @@ import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Image from "../components/elements/Image"
 import Stack from "../components/elements/Stack"
-import CategoryPills from "../components/molecules/CategoryPills"
+import TagPills from "../components/molecules/TagPills"
 import allArticles, { allDrafts } from "../content/allArticles"
-import { Category } from "../types"
+import { Tag } from "../types"
 import { fadeLeftAnimation } from "../utils/keyframes"
 
 const Blog = ({ location }: RouteComponentProps) => {
   const parsed = queryString.parse(location.search)
-  const selectedCategory = parsed.category
+  const selectedTagKey = typeof parsed.tag === `string` ? parsed.tag : undefined
 
   const articles =
     `draft` in parsed ? allDrafts.concat(allArticles) : allArticles
@@ -47,7 +47,7 @@ const Blog = ({ location }: RouteComponentProps) => {
             `}
           >
             <Link
-              className={selectedCategory ? undefined : `active`}
+              className={selectedTagKey ? undefined : `active`}
               css={`
                 opacity: 0;
                 animation: ${fadeLeftAnimation} 1s ease forwards;
@@ -55,7 +55,7 @@ const Blog = ({ location }: RouteComponentProps) => {
               to={queryString.stringifyUrl(
                 {
                   url: location.pathname,
-                  query: { ...parsed, category: undefined },
+                  query: { ...parsed, tag: undefined },
                 },
                 {
                   arrayFormat: `comma`,
@@ -64,14 +64,10 @@ const Blog = ({ location }: RouteComponentProps) => {
             >
               All
             </Link>
-            {Object.entries(Category)
-              .filter(
-                ([_, category]) =>
-                  category !== Category.None &&
-                  articles.some((article) => category === article.category)
-              )
-              .map(([key, category], index) => (
-                <Fragment key={key}>
+            {Object.entries(Tag)
+              .filter(([_, tag]) => tag !== Tag.WIP)
+              .map(([tagKey, tag], index) => (
+                <Fragment key={tagKey}>
                   <div
                     css={`
                       opacity: 0;
@@ -82,9 +78,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                     |
                   </div>
                   <Link
-                    className={
-                      selectedCategory === category ? `active` : undefined
-                    }
+                    className={selectedTagKey === tagKey ? `active` : undefined}
                     css={`
                       opacity: 0;
                       animation: ${fadeLeftAnimation} 1s ease
@@ -92,10 +86,10 @@ const Blog = ({ location }: RouteComponentProps) => {
                     `}
                     to={queryString.stringifyUrl({
                       url: location.pathname,
-                      query: { ...parsed, category: category },
+                      query: { ...parsed, tag: tagKey },
                     })}
                   >
-                    {category}
+                    {tag}
                   </Link>
                 </Fragment>
               ))}
@@ -105,7 +99,11 @@ const Blog = ({ location }: RouteComponentProps) => {
           {articles
             .filter(
               (article) =>
-                !selectedCategory || article.category === selectedCategory
+                !selectedTagKey ||
+                (typeof selectedTagKey === `string` &&
+                  article.tags.some(
+                    (tag) => tag === Tag[selectedTagKey as keyof typeof Tag]
+                  ))
             )
             .map((article) => (
               <Stack
@@ -127,9 +125,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                   >
                     {article.timeStamp.toDateString()}
                   </div>
-                  {article.category && (
-                    <CategoryPills categories={[article.category]} />
-                  )}
+                  <TagPills tags={article.tags} />
                 </div>
                 {article.title && (
                   <h3>

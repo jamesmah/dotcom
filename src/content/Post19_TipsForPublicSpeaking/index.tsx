@@ -3,18 +3,18 @@ import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  slug: `atomic-habits`,
+  slug: `tips-for-public-speaking`,
   timeStamp: new Date(`2021-11-07T00:18:15.792Z`),
   tags: [Tag.Growth, Tag.WIP],
-  title: `Atomic Habits`,
+  title: ` Tips For Public Speaking`,
   quote: ``,
   image,
   imageDetails: {
     author: {
-      name: `Gelgas Airlangga`,
-      link: `https://www.pexels.com/@gelgas`,
+      name: `freestocks.org`,
+      link: `https://www.pexels.com/@freestocks`,
     },
-    link: `https://www.pexels.com/photo/shallow-focus-of-sprout-401213/`,
+    link: `https://www.pexels.com/photo/black-microphone-64057/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

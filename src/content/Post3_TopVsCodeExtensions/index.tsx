@@ -1,11 +1,11 @@
 import { lazy } from "react"
-import { ArticleData, Category } from "../../types"
+import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `top-visual-studio-code-extensions`,
   timeStamp: new Date(`2021-10-16T04:24:17.209Z`),
-  category: Category.Dev,
+  tags: [Tag.Dev],
   title: `My Top 10 Visual Studio Code Extensions`,
   quote: ``,
   image,

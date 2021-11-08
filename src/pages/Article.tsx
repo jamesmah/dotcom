@@ -4,7 +4,7 @@ import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import BackHeader from "../components/molecules/BackHeader"
-import CategoryPills from "../components/molecules/CategoryPills"
+import TagPills from "../components/molecules/TagPills"
 import allArticles, { allDrafts } from "../content/allArticles"
 import PageNotFound from "./PageNotFound"
 
@@ -34,9 +34,7 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
             >
               {article.timeStamp.toDateString()}
             </div>
-            {article.category && (
-              <CategoryPills categories={[article.category]} />
-            )}
+            <TagPills tags={article.tags} />
           </div>
           {article.title && <h3 data-aos={`fade`}>{article.title}</h3>}
           <Suspense fallback={null}>

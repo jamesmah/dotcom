@@ -3,11 +3,11 @@ import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import Quote from "../components/molecules/Quote"
 import allArticles from "../content/allArticles"
-import { Category } from "../types"
+import { Tag } from "../types"
 
 const Quotes = () => {
-  const allQuotes = allArticles.filter(
-    (article) => article.category === Category.Quote
+  const allQuotes = allArticles.filter((article) =>
+    article.tags.some((tag) => tag === Tag.Quote)
   )
 
   return (

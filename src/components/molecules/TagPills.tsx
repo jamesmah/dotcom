@@ -1,15 +1,17 @@
 import { css } from "styled-components"
-import { Category } from "../../types"
-import { safeGetCategoryKey } from "../../utils/category"
+import { Tag } from "../../types"
 import Stack from "../elements/Stack"
 
-const CategoryPills = ({ categories, ...props }: { categories: string[] }) => (
+const tagEntries = Object.entries(Tag)
+const tagValues = Object.values(Tag)
+
+const TagPills = ({ tags }: { tags: Tag[] }) => (
   <Stack direction={`row`} gap={`1rem`}>
-    {categories
-      .filter((category) => category && category !== Category.None)
-      .map((category, index, array) => (
+    {tags
+      .slice()
+      .sort((a, b) => tagValues.indexOf(a) - tagValues.indexOf(b))
+      .map((tag, index, array) => (
         <div
-          {...props}
           css={css`
             color: ${({ theme }) => theme.palette.light[2]};
             background: ${({ theme }) => theme.palette.dark[2]};
@@ -19,13 +21,13 @@ const CategoryPills = ({ categories, ...props }: { categories: string[] }) => (
             font-weight: 600;
           `}
           data-aos={`fade`}
-          data-aos-delay={(array.length - index - 1) * 100}
+          data-aos-delay={(array.length - index) * 100}
           key={index}
         >
-          {safeGetCategoryKey(category) || category}
+          {tagEntries.find(([_, value]) => tag === value)?.[0]}
         </div>
       ))}
   </Stack>
 )
 
-export default CategoryPills
+export default TagPills
