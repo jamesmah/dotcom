@@ -6,19 +6,13 @@ import Container from "../components/elements/Container"
 import Image from "../components/elements/Image"
 import Stack from "../components/elements/Stack"
 import TagPills from "../components/molecules/TagPills"
-import allArticles, { allDrafts } from "../content/allArticles"
+import allArticles from "../content/allArticles"
 import { Tag } from "../types"
 import { fadeLeftAnimation } from "../utils/keyframes"
 
 const Blog = ({ location }: RouteComponentProps) => {
   const parsed = queryString.parse(location.search)
   const selectedTagKey = typeof parsed.tag === `string` ? parsed.tag : undefined
-
-  const articles =
-    `draft` in parsed
-      ? allDrafts.concat(allArticles)
-      : allArticles.filter((a) => !a.tags.includes(Tag.WIP))
-
   return (
     <Container
       $width={`md`}
@@ -67,7 +61,9 @@ const Blog = ({ location }: RouteComponentProps) => {
               All
             </Link>
             {Object.entries(Tag)
-              .filter(([_, tag]) => tag !== Tag.WIP)
+              .filter(([_, tag]) =>
+                allArticles.some((article) => article.tags.includes(tag))
+              )
               .map(([tagKey, tag], index) => (
                 <Fragment key={tagKey}>
                   <div
@@ -98,7 +94,7 @@ const Blog = ({ location }: RouteComponentProps) => {
           </div>
         </Stack>
         <Fragment key={location.search}>
-          {articles
+          {allArticles
             .filter(
               (article) =>
                 !selectedTagKey ||

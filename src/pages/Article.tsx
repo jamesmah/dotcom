@@ -9,9 +9,9 @@ import allArticles, { allDrafts } from "../content/allArticles"
 import PageNotFound from "./PageNotFound"
 
 const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
-  const article = allArticles
-    .concat(allDrafts)
-    .find((article) => article.slug === match.params.id)
+  const article =
+    allArticles.find((article) => article.slug === match.params.id) ||
+    allDrafts.find((article) => article.slug === match.params.id)
   if (!article?.Page) return <PageNotFound />
   const { Page } = article
 

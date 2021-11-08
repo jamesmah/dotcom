@@ -1,11 +1,10 @@
 import React, { LazyExoticComponent } from "react"
 
 export enum Tag {
-  WIP = `WIP`,
   Dev = `Software Development`,
-  Quote = `Quotes`,
   Growth = `Personal Growth`,
   Ideas = `Ideas`,
+  Quote = `Quotes`,
 }
 
 export interface ImageDetails {

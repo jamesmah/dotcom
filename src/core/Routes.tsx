@@ -2,6 +2,7 @@ import { lazy, useEffect } from "react"
 import { Route, Switch, useHistory, useLocation } from "react-router-dom"
 import Article from "../pages/Article"
 import Blog from "../pages/Blog"
+import Drafts from "../pages/Drafts"
 
 const Quotes = lazy(() => import(`../pages/Quotes`))
 const ComingSoon = lazy(() => import(`../pages/ComingSoon`))
@@ -23,6 +24,7 @@ const Routes = () => {
     <Switch>
       <Route component={Blog} exact path={`/`} />
       <Route component={Blog} exact path={`/blog`} />
+      <Route component={Drafts} exact path={`/drafts`} />
       <Route component={Quotes} exact path={`/quotes`} />
       <Route component={ComingSoon} exact path={`/about`} />
       <Route component={Credits} exact path={`/credits`} />
