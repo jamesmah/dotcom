@@ -5,7 +5,7 @@ import data from "."
 const Page = () => (
   <PageContainer>
     <p>{data.excerpt}</p>
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Non Violent Communication`,
   quote: ``,
+  originator: `Marshall B. Rosenberg`,
   image,
   imageDetails: {
     author: {

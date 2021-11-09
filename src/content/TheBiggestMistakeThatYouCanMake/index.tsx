@@ -13,13 +13,14 @@ const data: ArticleData = {
       for somebody else.
     </>
   ),
+  originator: `Earl Nightingale`,
   image,
   imageDetails: {
     author: {
-      name: `Eberhard Grossgasteiger`,
-      link: `https://www.pexels.com/@eberhardgross`,
+      name: `Anders Kristensen`,
+      link: `https://www.pexels.com/@andersbk`,
     },
-    link: `https://www.pexels.com/photo/man-standing-on-top-of-rock-at-daytime-673018/`,
+    link: `https://www.pexels.com/photo/man-wearing-watch-with-hand-on-pocket-447570/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

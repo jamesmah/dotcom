@@ -9,6 +9,7 @@ import EverythingAroundYouThatYouCallLife from "./EverythingAroundYouThatYouCall
 import FreeOnlineTeamBuildingGames from "./FreeOnlineTeamBuildingGames"
 import GenesDoNotEliminate from "./GenesDoNotEliminate"
 import HelloWorld from "./HelloWorld"
+import ItsNeverCrowded from "./ItsNeverCrowded"
 import MostOfTheMistakeIMade from "./MostOfTheMistakeIMade"
 import NonViolentCommunication from "./NonViolentCommunication"
 import PayYourselfFirst from "./PayYourselfFirst"
@@ -17,7 +18,6 @@ import ScheduleYourPriorities from "./ScheduleYourPriorities"
 import StyledComponentsCssProps from "./StyledComponentsCssProps"
 import The85PercentRule from "./The85PercentRule"
 import TheBiggestMistakeThatYouCanMake from "./TheBiggestMistakeThatYouCanMake"
-import TheLastMile from "./TheLastMile"
 import ThereIsntTimeSoBriefIsLife from "./ThereIsntTimeSoBriefIsLife"
 import ThreeBreaksToTakeEveryDay from "./ThreeBreaksToTakeEveryDay"
 import ThreeQuestionsToAsk from "./ThreeQuestionsToAsk"
@@ -42,7 +42,7 @@ export const allDrafts: ArticleData[] = [
   TipsForPublicSpeaking,
   EffectiveWaysToWindDown,
   PayYourselfFirst,
-  TheLastMile,
+  ItsNeverCrowded,
   RememberWhyYouStarted,
   WhenYouFallInLoveWithTheProcess,
   DoTheDifficultThings,

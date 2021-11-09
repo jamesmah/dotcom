@@ -14,13 +14,14 @@ const data: ArticleData = {
       step.
     </>
   ),
+  originator: `Lao Tzu`,
   image,
   imageDetails: {
     author: {
-      name: `Pixabay`,
-      link: `https://www.pexels.com/@pixabay`,
+      name: `Marek Piwnicki`,
+      link: `https://www.pexels.com/@marek-piwnicki-3907296`,
     },
-    link: `https://www.pexels.com/photo/green-tree-268533/`,
+    link: `https://www.pexels.com/photo/black-and-brown-wooden-staircase-8991527/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

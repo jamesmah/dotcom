@@ -1,5 +1,7 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
 import PageContainer from "../../components/elements/PageContainer"
+import BlockQuote from "../../components/molecules/BlockQuote"
+import ExternalLink from "../../components/molecules/ExternalLink"
 import data from "."
 
 const Page = () => (
@@ -34,9 +36,7 @@ const Page = () => (
       in his lecture, so I changed the wording just slightly to capture the
       essence of what he was saying in a more subtle manner,
     </p>
-    <blockquote data-aos={`fade-right`}>
-      <q>{data.quote}</q>
-    </blockquote>
+    <BlockQuote {...data} />
     <p>
       People often start by creating schedules that are often difficult,
       unrealistic or perhaps impossible to achieve. Schedules are meant to work
@@ -61,15 +61,10 @@ const Page = () => (
       doing what you enjoy might feel even better than before since would be
       compounded with a sense of reward and satisfaction.
     </p>
-    <a
-      href={`https://youtu.be/bCMkhCV2HWE`}
-      rel={`noreferrer`}
-      target={`_blank`}
-    >
-      🔗&nbsp;&nbsp;MAKE A DAMN SCHEDULE - Powerful Motivational Video | Jordan
-      Peterson
-    </a>
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ExternalLink href={`https://youtu.be/bCMkhCV2HWE`}>
+      MAKE A DAMN SCHEDULE - Powerful Motivational Video | Jordan Peterson
+    </ExternalLink>
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

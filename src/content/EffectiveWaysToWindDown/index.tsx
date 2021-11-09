@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Effective Ways To Wind Down`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

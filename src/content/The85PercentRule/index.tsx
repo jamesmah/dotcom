@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `The 85 Percent Rule`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

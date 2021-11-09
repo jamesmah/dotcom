@@ -1,5 +1,7 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
 import PageContainer from "../../components/elements/PageContainer"
+import BlockQuote from "../../components/molecules/BlockQuote"
+import ExternalLink from "../../components/molecules/ExternalLink"
 import data from "."
 
 const Page = () => (
@@ -34,19 +36,13 @@ const Page = () => (
       relationships as they move towards different stages in their lives.
     </p>
     <p>At the end of the talk, Robert closes with a beautiful quote:</p>
-    <blockquote data-aos={`fade-right`}>
-      <q>{data.quote}</q> - Mark Twain
-    </blockquote>
+    <BlockQuote {...data} />
     <p>Click below to watch the full video:</p>
-    <a
-      href={`https://youtu.be/8KkKuTCFvzI`}
-      rel={`noreferrer`}
-      target={`_blank`}
-    >
-      🔗&nbsp;&nbsp;Robert Waldinger: What makes a good life? Lessons from the
-      longest study on happiness | TED
-    </a>
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ExternalLink href={`https://youtu.be/8KkKuTCFvzI`}>
+      Robert Waldinger: What makes a good life? Lessons from the longest study
+      on happiness | TED
+    </ExternalLink>
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

@@ -21,6 +21,7 @@ export interface ArticleData {
   tags: Tag[]
   title: React.ReactNode
   quote: React.ReactNode
+  originator: string
   image: string
   imageDetails: ImageDetails
   excerpt: React.ReactNode

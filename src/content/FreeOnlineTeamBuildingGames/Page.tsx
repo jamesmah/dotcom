@@ -1,4 +1,5 @@
 import PageContainer from "../../components/elements/PageContainer"
+import ExternalLink from "../../components/molecules/ExternalLink"
 import amongus from "./images/amongus.jpg"
 import codenames from "./images/codenames.jpg"
 import gartic from "./images/gartic.jpg"
@@ -38,13 +39,9 @@ const Page = () => (
       still a fantastic game that's easy to pick up with great replay value.
     </p>
     <img src={amongus} />
-    <a
-      href={`https://www.innersloth.com/games/among-us/`}
-      rel={`noreferrer`}
-      target={`_blank`}
-    >
-      🔗&nbsp;&nbsp;Link to Among Us
-    </a>
+    <ExternalLink href={`https://www.innersloth.com/games/among-us/`}>
+      Link to Among Us
+    </ExternalLink>
     <br />
     <h3>2. Codenames</h3>
     <p>
@@ -65,9 +62,9 @@ const Page = () => (
       recommend giving Decrypto a go.
     </p>
     <img src={codenames} />
-    <a href={`https://codenames.game/`} rel={`noreferrer`} target={`_blank`}>
-      🔗&nbsp;&nbsp;Link to Codenames
-    </a>
+    <ExternalLink href={`https://codenames.game/`}>
+      Link to Codenames
+    </ExternalLink>
     <br />
     <h3>3. Gartic.io</h3>
     <p>
@@ -82,9 +79,7 @@ const Page = () => (
       <li>https://sketchful.io/</li>
     </ul>
     <img src={gartic} />
-    <a href={`https://gartic.io/`} rel={`noreferrer`} target={`_blank`}>
-      🔗&nbsp;&nbsp;Link to Gartic.io
-    </a>
+    <ExternalLink href={`https://gartic.io/`}>Link to Gartic.io</ExternalLink>
     <br />
     <h3>4. GeoGuessr</h3>
     <p>
@@ -100,9 +95,9 @@ const Page = () => (
       definitely cost a little more.
     </p>
     <img src={geoguessr} />
-    <a href={`https://www.geoguessr.com/`} rel={`noreferrer`} target={`_blank`}>
-      🔗&nbsp;&nbsp;Link to GeoGuessr
-    </a>
+    <ExternalLink href={`https://www.geoguessr.com/`}>
+      Link to GeoGuessr
+    </ExternalLink>
     <br />
     <h3>5. Really Boring Website</h3>
     <p>
@@ -121,13 +116,9 @@ const Page = () => (
       the biggest laughs from this one.
     </p>
     <img src={scattergories} />
-    <a
-      href={`https://really.boring.website/`}
-      rel={`noreferrer`}
-      target={`_blank`}
-    >
-      🔗&nbsp;&nbsp;Link to Really Boring Website
-    </a>
+    <ExternalLink href={`https://really.boring.website/`}>
+      Link to Really Boring Website
+    </ExternalLink>
     <br />
     <p>
       Playing games together with the people you know and care about is a great

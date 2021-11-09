@@ -13,6 +13,7 @@ const data: ArticleData = {
       you want. Set it up so it's the best possible day you could have.
     </>
   ),
+  originator: `Jordan Peterson`,
   image,
   imageDetails: {
     author: {

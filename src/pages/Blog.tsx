@@ -3,9 +3,8 @@ import { Fragment } from "react"
 import { Link, RouteComponentProps } from "react-router-dom"
 import { css } from "styled-components"
 import Container from "../components/elements/Container"
-import Image from "../components/elements/Image"
 import Stack from "../components/elements/Stack"
-import TagPills from "../components/molecules/TagPills"
+import ArticlePreview from "../components/molecules/ArticlePreview"
 import allArticles from "../content/allArticles"
 import { Tag } from "../types"
 import { fadeLeftAnimation } from "../utils/keyframes"
@@ -48,15 +47,10 @@ const Blog = ({ location }: RouteComponentProps) => {
                 opacity: 0;
                 animation: ${fadeLeftAnimation} 1s ease forwards;
               `}
-              to={queryString.stringifyUrl(
-                {
-                  url: location.pathname,
-                  query: { ...parsed, tag: undefined },
-                },
-                {
-                  arrayFormat: `comma`,
-                }
-              )}
+              to={queryString.stringifyUrl({
+                url: location.pathname,
+                query: { ...parsed, tag: undefined },
+              })}
             >
               All
             </Link>
@@ -73,7 +67,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                         ${(index * 2 + 1) * 50}ms forwards;
                     `}
                   >
-                    |
+                    {index === 0 ? <Link to={`/drafts`}>|</Link> : `|`}
                   </div>
                   <Link
                     className={selectedTagKey === tagKey ? `active` : undefined}
@@ -104,79 +98,7 @@ const Blog = ({ location }: RouteComponentProps) => {
                   ))
             )
             .map((article) => (
-              <Stack
-                data-aos={`fade`}
-                gap={`0.5rem`}
-                id={article.slug}
-                key={article.slug}
-              >
-                <div
-                  css={`
-                    display: flex;
-                    justify-content: space-between;
-                  `}
-                >
-                  <div
-                    css={css`
-                      color: ${({ theme }) => theme.palette.light[2]};
-                    `}
-                  >
-                    {article.timeStamp.toDateString()}
-                  </div>
-                  <TagPills tags={article.tags} />
-                </div>
-                {article.title && (
-                  <h3>
-                    <Link
-                      css={css`
-                        color: ${({ theme }) => theme.palette.light[1]};
-                      `}
-                      to={`/${article.slug}#top`}
-                    >
-                      {article.title}
-                    </Link>
-                  </h3>
-                )}
-                {article.quote && (
-                  <Link
-                    css={css`
-                      color: ${({ theme }) => theme.palette.light[1]};
-                    `}
-                    to={`/${article.slug}#top`}
-                  >
-                    <blockquote>
-                      <q>{article.quote}</q>
-                    </blockquote>
-                  </Link>
-                )}
-                <Link to={`/${article.slug}#top`}>
-                  <div
-                    css={`
-                      position: relative;
-                      padding-top: 40%;
-                      overflow: hidden;
-                    `}
-                  >
-                    <div
-                      css={`
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                      `}
-                    >
-                      <Image src={article.image} />
-                    </div>
-                  </div>
-                </Link>
-                {article.excerpt && <div>{article.excerpt}</div>}
-                <div data-aos={`fade-left`} data-aos-offset={0}>
-                  <Link to={`/${article.slug}#top`}>Read more ❯</Link>
-                </div>
-              </Stack>
+              <ArticlePreview article={article} key={article.slug} />
             ))}
         </Fragment>
       </Stack>

@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Dev],
   title: `The Better Way To Style Your React Components`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

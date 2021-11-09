@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Atomic Habits`,
   quote: ``,
+  originator: `James Clear`,
   image,
   imageDetails: {
     author: {

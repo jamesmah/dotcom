@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Ideas],
   title: `Free Online Team Building Games`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

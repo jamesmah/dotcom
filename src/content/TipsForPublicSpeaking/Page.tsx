@@ -9,7 +9,7 @@ const Page = () => (
       <li>Look before you talk</li>
     </ul>
     <br />
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

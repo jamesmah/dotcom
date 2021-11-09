@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Three Questions To Ask To Increase Productivity`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

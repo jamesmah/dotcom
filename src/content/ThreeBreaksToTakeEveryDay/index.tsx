@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Three Breaks To Take Every Day`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

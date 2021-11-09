@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: ` Tips For Public Speaking`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

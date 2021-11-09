@@ -10,7 +10,7 @@ const Page = () => (
       <li>How could this task be accomplished if I had half as much time?</li>
     </ul>
     <br />
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

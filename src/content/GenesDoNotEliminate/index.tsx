@@ -13,6 +13,7 @@ const data: ArticleData = {
       us what to work hard on.
     </>
   ),
+  originator: `James Clear`,
   image,
   imageDetails: {
     author: {

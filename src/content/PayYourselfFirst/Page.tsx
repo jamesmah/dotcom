@@ -15,7 +15,7 @@ const Page = () => (
       <li>Muscle relaxation</li>
     </ul>
     <br />
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

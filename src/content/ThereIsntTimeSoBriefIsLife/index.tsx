@@ -14,6 +14,7 @@ const data: ArticleData = {
       an instant, so to speak, for that.
     </>
   ),
+  originator: `Mark Twain`,
   image,
   imageDetails: {
     author: {

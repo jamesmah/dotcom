@@ -1,13 +1,13 @@
 import PageContainer from "../../components/elements/PageContainer"
-import image01 from "./images/image01.png"
-import image02 from "./images/image02.png"
+import cssprop01 from "./images/cssprop01.png"
+import cssprop02 from "./images/cssprop02.png"
 import data from "."
 
 const Page = () => (
   <PageContainer>
     <p>{data.excerpt}</p>
     <p>Below is an example of the CSS prop in Styled Components:</p>
-    <img src={image01} />
+    <img src={cssprop01} />
     <p>
       Let me start by saying, if you are comfortable with having a separate file
       for <code>CSS/SCSS</code> this might not be what you're looking for. The
@@ -26,7 +26,7 @@ const Page = () => (
       having to add all the boilerplate code when creating new styled components
       and also avoid having to pass custom props in.
     </p>
-    <img src={image02} />
+    <img src={cssprop02} />
     <p>
       You still have access to the theme for consistency and all of Javascript
       without the overhead. While you might argue that there should be a

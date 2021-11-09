@@ -8,13 +8,14 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Cookie Jar`,
   quote: ``,
+  originator: `David Goggins`,
   image,
   imageDetails: {
     author: {
-      name: `Pixabay`,
-      link: `https://www.pexels.com/@pixabay`,
+      name: `Lisa`,
+      link: `https://www.pexels.com/@fotios-photos`,
     },
-    link: `https://www.pexels.com/photo/green-tree-268533/`,
+    link: `https://www.pexels.com/photo/photo-of-chocolate-cookies-in-jar-1476330/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

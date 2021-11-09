@@ -14,6 +14,7 @@ const data: ArticleData = {
       learn that, you'll never be the same again.
     </>
   ),
+  originator: `Steve Jobs`,
   image,
   imageDetails: {
     author: {

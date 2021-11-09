@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [],
   title: `Hello World!`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

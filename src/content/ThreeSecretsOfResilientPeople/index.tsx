@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Growth],
   title: `Three Secrets Of Resilient People`,
   quote: ``,
+  originator: `Lucy Hone`,
   image,
   imageDetails: {
     author: {

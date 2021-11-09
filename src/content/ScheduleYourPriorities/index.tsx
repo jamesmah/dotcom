@@ -13,6 +13,7 @@ const data: ArticleData = {
       priorities.
     </>
   ),
+  originator: `Stephen Covey`,
   image,
   imageDetails: {
     author: {

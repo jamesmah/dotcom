@@ -1,14 +1,15 @@
 import PageContainer from "../../components/elements/PageContainer"
-import image01 from "./images/image01.gif"
-import image02 from "./images/image02.png"
-import image03 from "./images/image03.gif"
-import image04 from "./images/image04.png"
-import image05 from "./images/image05.png"
-import image06 from "./images/image06.png"
-import image07 from "./images/image07.gif"
-import image08 from "./images/image08.png"
-import image09 from "./images/image09.gif"
-import image10 from "./images/image10.gif"
+import ExternalLink from "../../components/molecules/ExternalLink"
+import autorenametag from "./images/autorenametag.gif"
+import bracketpaircolor from "./images/bracketpaircolor.png"
+import coderunner from "./images/coderunner.gif"
+import consoleutils from "./images/consoleutils.gif"
+import eslint from "./images/eslint.png"
+import gitlens from "./images/gitlens.png"
+import jsonsort from "./images/jsonsort.gif"
+import prettier from "./images/prettier.png"
+import styledcomponents from "./images/styledcomponents.gif"
+import stylelint from "./images/stylelint.png"
 import data from "."
 
 const Page = () => (
@@ -24,14 +25,12 @@ const Page = () => (
       {` `}
       <code>.jsx</code> or <code>.tsx</code> files.
     </p>
-    <img src={image01} />
-    <a
+    <img src={autorenametag} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>2. Bracket Pair Colorizer 2</h3>
     <p>
@@ -41,14 +40,12 @@ const Page = () => (
       extension is still being used much more widely than this updated version
       even with the improved performance. Guess you can't stop the momentum.
     </p>
-    <img src={image02} />
-    <a
+    <img src={bracketpaircolor} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>3. Code Runner</h3>
     <p>
@@ -69,14 +66,12 @@ const Page = () => (
       This sets the transpile only flag on and turns off type checking so that
       you can run snippets without worrying about type or module errors.
     </p>
-    <img src={image03} />
-    <a
+    <img src={coderunner} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>4. ESLint</h3>
     <p>Integrates ESLint into VS Code. Enough said.</p>
@@ -115,14 +110,12 @@ const Page = () => (
         identify similar elements for potential reusability.
       </li>
     </ul>
-    <img src={image04} />
-    <a
+    <img src={eslint} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>5. GitLens</h3>
     <p>
@@ -133,14 +126,12 @@ const Page = () => (
       you can quickly find out who is responsible for that badly written line of
       code. ;)
     </p>
-    <img src={image05} />
-    <a
+    <img src={gitlens} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>6. javascript console utils</h3>
     <p>
@@ -155,14 +146,12 @@ const Page = () => (
       function block) but sometimes fails miserably. This extension just places
       the console.log statement on the next line. Simple.
     </p>
-    <img src={image09} />
-    <a
+    <img src={consoleutils} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>7. Prettier</h3>
     <p>
@@ -173,14 +162,12 @@ const Page = () => (
       indentation to semicolons and trailing commas. And while we're on the
       topic of semicolons, no we don't need it.
     </p>
-    <img src={image06} />
-    <a
+    <img src={prettier} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>8. Sort JSON objects</h3>
     <p>
@@ -190,14 +177,12 @@ const Page = () => (
       sorting, which is why this is probably better off as a manually triggered
       extension rather than a linting rule.
     </p>
-    <img src={image07} />
-    <a
+    <img src={jsonsort} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=richie5um2.vscode-sort-json`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>9. stylelint</h3>
     <p>
@@ -209,14 +194,12 @@ const Page = () => (
       files. In short, what this library does for styling is similar to what
       ESlint does for javascript. Fantastic.
     </p>
-    <img src={image08} />
-    <a
+    <img src={stylelint} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <h3>10. vscode-styled-components</h3>
     <p>
@@ -228,14 +211,12 @@ const Page = () => (
       just have to rely on this extension to have our styles not just look like
       a very long string.
     </p>
-    <img src={image10} />
-    <a
+    <img src={styledcomponents} />
+    <ExternalLink
       href={`https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components`}
-      rel={`noreferrer`}
-      target={`_blank`}
     >
-      🔗&nbsp;&nbsp;Link to extension in Visual Studio Marketplace
-    </a>
+      Link to extension in Visual Studio Marketplace
+    </ExternalLink>
     <br />
     <p>
       While this is my current list of preferred extensions, the tools that you

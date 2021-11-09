@@ -13,6 +13,7 @@ const data: ArticleData = {
       going when work isn't exciting that makes the difference.
     </>
   ),
+  originator: `James Clear`,
   image,
   imageDetails: {
     author: {

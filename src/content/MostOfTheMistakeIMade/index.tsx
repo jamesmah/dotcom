@@ -14,6 +14,7 @@ const data: ArticleData = {
       too tired. So that would be my only advice.
     </>
   ),
+  originator: `Bill Clinton to Obama`,
   image,
   imageDetails: {
     author: {

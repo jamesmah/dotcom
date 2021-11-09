@@ -13,13 +13,14 @@ const data: ArticleData = {
       it will be to get there, and keep going.
     </>
   ),
+  originator: `Ralph Marston`,
   image,
   imageDetails: {
     author: {
       name: `Pixabay`,
       link: `https://www.pexels.com/@pixabay`,
     },
-    link: `https://www.pexels.com/photo/green-tree-268533/`,
+    link: `https://www.pexels.com/photo/road-landscape-nature-sky-56832/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

@@ -11,7 +11,7 @@ const Page = () => (
       <li>Make it satisfying</li>
     </ul>
     <br />
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

@@ -13,13 +13,14 @@ const data: ArticleData = {
       have to wait to give yourself permission to be happy
     </>
   ),
+  originator: `James Clear`,
   image,
   imageDetails: {
     author: {
-      name: `Pixabay`,
-      link: `https://www.pexels.com/@pixabay`,
+      name: `Dennis Magati`,
+      link: `https://www.pexels.com/@dennismagati`,
     },
-    link: `https://www.pexels.com/photo/green-tree-268533/`,
+    link: `https://www.pexels.com/photo/silhouette-of-four-people-against-sun-background-862848/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

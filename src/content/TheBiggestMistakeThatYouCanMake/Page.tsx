@@ -1,5 +1,6 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
 import PageContainer from "../../components/elements/PageContainer"
+import BlockQuote from "../../components/molecules/BlockQuote"
 import data from "."
 
 const Page = () => (
@@ -10,15 +11,16 @@ const Page = () => (
       book for any software engineer just starting out, or even a few years into
       the industry.
     </p>
-    <blockquote data-aos={`fade-right`}>
-      <q>
-        The biggest mistake that you can make is to believe that you are working
-        for somebody else. Job security is gone. The driving force of a career
-        must come from the individual. Remember: Jobs are owned by the company,
-        you own your career!
-      </q>
-      {` `}- Earl Nightingale
-    </blockquote>
+    <BlockQuote
+      {...data}
+      quote={
+        <>
+          {data.quote} Job security is gone. The driving force of a career must
+          come from the individual. Remember: Jobs are owned by the company, you
+          own your career!
+        </>
+      }
+    />
     <p>
       Limiting yourself on what you can achieve by giving yourself the excuse
       that something is "beyond your job scope or pay grade" is an attitude that
@@ -59,7 +61,7 @@ const Page = () => (
       employer doesn't appreciate the work that you do even after some time, it
       might be a good time to move on. And bring that cookie jar with you.
     </p>
-    <ImageAuthor image={data.image} imageDetails={data.imageDetails} />
+    <ImageAuthor {...data} />
   </PageContainer>
 )
 

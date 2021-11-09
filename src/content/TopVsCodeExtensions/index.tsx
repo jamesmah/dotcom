@@ -8,6 +8,7 @@ const data: ArticleData = {
   tags: [Tag.Dev],
   title: `My Top 10 Visual Studio Code Extensions`,
   quote: ``,
+  originator: ``,
   image,
   imageDetails: {
     author: {

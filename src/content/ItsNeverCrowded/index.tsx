@@ -3,18 +3,19 @@ import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  slug: `the-last-mile`,
+  slug: `its-never-crowded`,
   timeStamp: new Date(`2021-11-07T00:18:15.792Z`),
   tags: [Tag.Quote],
   title: ``,
-  quote: `The last mile is always the least crowded.`,
+  quote: `It's never crowded along the extra mile.`,
+  originator: `Wayne Dyer`,
   image,
   imageDetails: {
     author: {
-      name: `Pixabay`,
-      link: `https://www.pexels.com/@pixabay`,
+      name: `Eberhard Grossgasteiger`,
+      link: `https://www.pexels.com/@eberhardgross`,
     },
-    link: `https://www.pexels.com/photo/green-tree-268533/`,
+    link: `https://www.pexels.com/photo/man-standing-on-top-of-rock-at-daytime-673018/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),
