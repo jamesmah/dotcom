@@ -4,7 +4,7 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `three-secrets-of-resilient-people`,
-  timeStamp: new Date(`2021-11-06T12:15:50.642Z`),
+  timeStamp: new Date(`2021-11-09T05:03:07.298Z`),
   tags: [Tag.Growth],
   title: `Three Secrets Of Resilient People`,
   quote: ``,
@@ -12,10 +12,10 @@ const data: ArticleData = {
   image,
   imageDetails: {
     author: {
-      name: `Oziel Gómez`,
-      link: `https://www.pexels.com/@ozgomz`,
+      name: `Francesco Ungaro`,
+      link: `https://www.pexels.com/@francesco-ungaro`,
     },
-    link: `https://www.pexels.com/photo/men-s-blue-leather-jacket-and-brown-backpack-868097/`,
+    link: `https://www.pexels.com/photo/grayscale-photo-of-gray-man-statue-96446/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

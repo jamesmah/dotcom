@@ -21,7 +21,7 @@ const Page = () => (
       high-quality presentation and UI.
     </p>
     <br />
-    <h3>1. Among Us</h3>
+    <h4>1. Among Us</h4>
     <p>
       One of the most popular games during the pandemic last year, I'd be
       surprised if anyone haven't at least heard of it. Among us has similar
@@ -43,7 +43,7 @@ const Page = () => (
       Link to Among Us
     </ExternalLink>
     <br />
-    <h3>2. Codenames</h3>
+    <h4>2. Codenames</h4>
     <p>
       Probably in the arsenal of every boardgames lover, this game is really
       easy to recommend both in its physical and online versions. Two teams
@@ -66,7 +66,7 @@ const Page = () => (
       Link to Codenames
     </ExternalLink>
     <br />
-    <h3>3. Gartic.io</h3>
+    <h4>3. Gartic.io</h4>
     <p>
       A light fun online version of Pictionary. Works great for larger groups
       and younger kids too. There are many alternatives but I found this site to
@@ -81,7 +81,7 @@ const Page = () => (
     <img src={gartic} />
     <ExternalLink href={`https://gartic.io/`}>Link to Gartic.io</ExternalLink>
     <br />
-    <h3>4. GeoGuessr</h3>
+    <h4>4. GeoGuessr</h4>
     <p>
       If you like travelling, this is the game for you. Even though this game
       can get extremely challenging for the geographically impaired like me, it
@@ -99,7 +99,7 @@ const Page = () => (
       Link to GeoGuessr
     </ExternalLink>
     <br />
-    <h3>5. Really Boring Website</h3>
+    <h4>5. Really Boring Website</h4>
     <p>
       Contrary to its name, this site might actually fix your boredom instead.
       If you're familiar with Scattergories you'd be able to just right into it

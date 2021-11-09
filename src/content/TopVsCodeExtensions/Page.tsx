@@ -16,7 +16,7 @@ const Page = () => (
   <PageContainer>
     <p>{data.excerpt}</p>
     <br />
-    <h3>1. Auto Rename Tag</h3>
+    <h4>1. Auto Rename Tag</h4>
     <p>
       A simple extension that renames the closing HTML/XML tag. You would think
       that this feature would come out of the box from VS Code by now, but as of
@@ -32,7 +32,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>2. Bracket Pair Colorizer 2</h3>
+    <h4>2. Bracket Pair Colorizer 2</h4>
     <p>
       Identifies matching brackets and colourizes them. This extension is all
       about improving readability, and once you start using this you will wonder
@@ -47,7 +47,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>3. Code Runner</h3>
+    <h4>3. Code Runner</h4>
     <p>
       Run code snippets or files for most mainstream languages. For frontend web
       development, it saves you the hassle of opening a browser console and
@@ -73,7 +73,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>4. ESLint</h3>
+    <h4>4. ESLint</h4>
     <p>Integrates ESLint into VS Code. Enough said.</p>
     <p>
       Here are some of the linting rules that I add on top of the recommended
@@ -117,7 +117,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>5. GitLens</h3>
+    <h4>5. GitLens</h4>
     <p>
       Helps to visualize code history and authorship using Git. A tool that
       greatly increases accessibility in discovering whom, why and when a line
@@ -133,7 +133,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>6. javascript console utils</h3>
+    <h4>6. javascript console utils</h4>
     <p>
       Log everything! This extension just makes logging a little faster in every
       way. Logging a variable without context usually makes it very difficult to
@@ -153,7 +153,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>7. Prettier</h3>
+    <h4>7. Prettier</h4>
     <p>
       I don't think it is an understatement when I say that Prettier has saved
       countless hours, possibly days or even weeks of my life. If you care about
@@ -169,7 +169,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>8. Sort JSON objects</h3>
+    <h4>8. Sort JSON objects</h4>
     <p>
       Alphabetically sorts the keys in selected JSON objects. Similar to how
       sorted imports make life easier for everyone (less merge conflicts and
@@ -184,7 +184,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>9. stylelint</h3>
+    <h4>9. stylelint</h4>
     <p>
       Even though this extension works best with standalone <code>.css</code> or
       {` `}
@@ -201,7 +201,7 @@ const Page = () => (
       Link to extension in Visual Studio Marketplace
     </ExternalLink>
     <br />
-    <h3>10. vscode-styled-components</h3>
+    <h4>10. vscode-styled-components</h4>
     <p>
       If you use Styled Components you probably already have this extension
       installed. Since Styled Components uses template literals, the styles that

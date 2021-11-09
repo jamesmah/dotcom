@@ -29,7 +29,6 @@ import WhenYouFallInLoveWithTheProcess from "./WhenYouFallInLoveWithTheProcess"
 
 export const allDrafts: ArticleData[] = [
   AnyoneCanWorkHard,
-  ThreeSecretsOfResilientPeople,
   The85PercentRule,
   NonViolentCommunication,
   ScheduleYourPriorities,
@@ -58,6 +57,7 @@ const allArticles: ArticleData[] = [
   StyledComponentsCssProps,
   TheBiggestMistakeThatYouCanMake,
   FreeOnlineTeamBuildingGames,
+  ThreeSecretsOfResilientPeople,
 ].sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
 
 export default allArticles

@@ -13,7 +13,7 @@ const Drafts = ({ location }: RouteComponentProps) => (
     `}
   >
     <Stack gap={`5rem`}>
-      <h3>Drafts</h3>
+      <h2>Drafts</h2>
       <Fragment key={location.search}>
         {allDrafts.map((article) => (
           <ArticlePreview article={article} key={article.slug} />
