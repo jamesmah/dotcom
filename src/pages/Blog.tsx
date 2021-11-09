@@ -9,7 +9,7 @@ import allArticles from "../content/allArticles"
 import { Tag } from "../types"
 import { fadeLeftAnimation } from "../utils/keyframes"
 
-const Blog = ({ location }: RouteComponentProps) => {
+const Blog = ({ location, history }: RouteComponentProps) => {
   const parsed = queryString.parse(location.search)
   const selectedTagKey = typeof parsed.tag === `string` ? parsed.tag : undefined
   return (
@@ -66,8 +66,11 @@ const Blog = ({ location }: RouteComponentProps) => {
                       animation: ${fadeLeftAnimation} 1s ease
                         ${(index * 2 + 1) * 50}ms forwards;
                     `}
+                    onClick={
+                      index === 0 ? () => history.push(`/drafts`) : undefined
+                    }
                   >
-                    {index === 0 ? <Link to={`/drafts`}>|</Link> : `|`}
+                    |
                   </div>
                   <Link
                     className={selectedTagKey === tagKey ? `active` : undefined}
