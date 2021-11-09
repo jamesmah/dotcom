@@ -8,8 +8,13 @@ import "./aos.scss"
 
 import AOS from "aos"
 import { Suspense, useEffect, useState } from "react"
+import ReactGA from "react-ga"
 import DefaultLayout from "../components/layout/Layout"
 import Routes from "./Routes"
+
+if (process.env.NODE_ENV === `production`) {
+  ReactGA.initialize(`UA-212302378-1`)
+}
 
 const App = () => {
   const [fontsLoaded, setFontsLoaded] = useState(false)

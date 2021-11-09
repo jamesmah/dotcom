@@ -1,4 +1,5 @@
 import { lazy, useEffect } from "react"
+import ReactGA from "react-ga"
 import { Route, Switch, useHistory, useLocation } from "react-router-dom"
 import Article from "../pages/Article"
 import Blog from "../pages/Blog"
@@ -12,6 +13,12 @@ const PageNotFound = lazy(() => import(`../pages/PageNotFound`))
 const Routes = () => {
   const location = useLocation()
   const history = useHistory()
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === `production`) {
+      ReactGA.pageview(location.pathname + location.search)
+    }
+  }, [location])
 
   useEffect(() => {
     if (location.hash.slice(1) === `top`) {
