@@ -17,10 +17,10 @@ const data: ArticleData = {
   image,
   imageDetails: {
     author: {
-      name: `Daria Shevtsova`,
-      link: `https://www.pexels.com/@daria`,
+      name: `Giallo`,
+      link: `https://www.pexels.com/@giallo`,
     },
-    link: `https://www.pexels.com/photo/macbook-air-beside-notebook-and-camera-916335/`,
+    link: `https://www.pexels.com/photo/assorted-silver-colored-pocket-watch-lot-selective-focus-photo-859895/`,
   },
   excerpt: ``,
   Page: lazy(() => import(`./Page`)),

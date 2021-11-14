@@ -4,7 +4,7 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `effective-ways-to-wind-down`,
-  timeStamp: new Date(`2021-11-07T00:18:15.792Z`),
+  timeStamp: new Date(`2021-11-14T20:45:16.404Z`),
   tags: [Tag.Growth],
   title: `Effective Ways To Wind Down`,
   quote: ``,

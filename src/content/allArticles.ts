@@ -14,7 +14,6 @@ import MostOfTheMistakeIMade from "./MostOfTheMistakeIMade"
 import NonViolentCommunication from "./NonViolentCommunication"
 import PayYourselfFirst from "./PayYourselfFirst"
 import RememberWhyYouStarted from "./RememberWhyYouStarted"
-import ScheduleYourPriorities from "./ScheduleYourPriorities"
 import StyledComponentsCssProps from "./StyledComponentsCssProps"
 import The85PercentRule from "./The85PercentRule"
 import TheBiggestMistakeThatYouCanMake from "./TheBiggestMistakeThatYouCanMake"
@@ -31,7 +30,6 @@ export const allDrafts: ArticleData[] = [
   AnyoneCanWorkHard,
   The85PercentRule,
   NonViolentCommunication,
-  ScheduleYourPriorities,
   ThreeBreaksToTakeEveryDay,
   GenesDoNotEliminate,
   MostOfTheMistakeIMade,
@@ -39,7 +37,6 @@ export const allDrafts: ArticleData[] = [
   AtomicHabits,
   ThreeQuestionsToAsk,
   TipsForPublicSpeaking,
-  EffectiveWaysToWindDown,
   PayYourselfFirst,
   ItsNeverCrowded,
   RememberWhyYouStarted,
@@ -58,6 +55,7 @@ const allArticles: ArticleData[] = [
   TheBiggestMistakeThatYouCanMake,
   FreeOnlineTeamBuildingGames,
   ThreeSecretsOfResilientPeople,
+  EffectiveWaysToWindDown,
 ].sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
 
 export default allArticles
