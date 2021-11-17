@@ -1,4 +1,5 @@
 import PageContainer from "../../components/elements/PageContainer"
+import ExternalLink from "../../components/molecules/ExternalLink"
 import cssprop01 from "./images/cssprop01.png"
 import cssprop02 from "./images/cssprop02.png"
 import data from "."
@@ -60,13 +61,9 @@ const Page = () => (
       get into trouble with those pesky class name typos again.
     </p>
     <p>For more, visit the official documentation for using CSS prop:</p>
-    <a
-      href={`https://styled-components.com/docs/api#css-prop`}
-      rel={`noreferrer`}
-      target={`_blank`}
-    >
+    <ExternalLink href={`https://styled-components.com/docs/api#css-prop`}>
       https://styled-components.com/docs/api#css-prop
-    </a>
+    </ExternalLink>
   </PageContainer>
 )
 
