@@ -9,7 +9,7 @@ const data: ArticleData = {
   title: ``,
   quote: (
     <>
-      The biggest mistake that you can make it to believe that you are working
+      The biggest mistake that you can make is to believe that you are working
       for somebody else.
     </>
   ),
