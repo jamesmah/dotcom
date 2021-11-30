@@ -33,7 +33,7 @@ const Page = () => (
     <p>
       The key to success is finding the right balance between intensity, focus,
       and relaxation. You’ll find that over time you will be achieving much more
-      even though you may not be trying as hard.
+      even though you're not trying as hard.
     </p>
     <p>
       To explore further into this topic, here's a good read:
