@@ -17,8 +17,8 @@ const Page = () => (
     </p>
     <p>
       Things get worse when you start to deprive yourself of getting enough
-      sleep. With comments such as 'I can sleep when I'm dead' and 'the most
-      successful CEOs have only four hours' sleep', it has almost become a
+      sleep. With comments such as "I can sleep when I'm dead" and "the most
+      successful CEOs have only four hours' sleep", it has almost become a
       competition to see who can get away with the least amount of sleep. The
       lack of sleep makes you less focused and easily distracted. You become
       moody and less forgiving towards the people around you.
