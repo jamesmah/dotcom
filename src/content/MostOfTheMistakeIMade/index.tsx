@@ -4,7 +4,7 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `most-of-the-mistakes-i-made`,
-  timeStamp: new Date(`2021-11-07T22:45:51.988Z`),
+  timeStamp: new Date(`2021-11-30T19:58:21.940Z`),
   tags: [Tag.Quote],
   title: ``,
   quote: (

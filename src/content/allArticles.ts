@@ -32,7 +32,6 @@ export const allDrafts: ArticleData[] = [
   NonViolentCommunication,
   ThreeBreaksToTakeEveryDay,
   GenesDoNotEliminate,
-  MostOfTheMistakeIMade,
   EverythingAroundYouThatYouCallLife,
   AtomicHabits,
   ThreeQuestionsToAsk,
@@ -56,6 +55,7 @@ const allArticles: ArticleData[] = [
   FreeOnlineTeamBuildingGames,
   ThreeSecretsOfResilientPeople,
   EffectiveWaysToWindDown,
+  MostOfTheMistakeIMade,
 ].sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
 
 export default allArticles

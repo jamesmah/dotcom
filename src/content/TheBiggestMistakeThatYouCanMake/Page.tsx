@@ -41,7 +41,7 @@ const Page = () => (
         rel={`noreferrer`}
         target={`_blank`}
       >
-        <i>read more about it in his book</i>
+        <i>read more about it in his book 📚</i>
       </a>
       ) and place all your growth and victories in there. Even when feel that
       you might not be receiving the recognition or compensation that you
