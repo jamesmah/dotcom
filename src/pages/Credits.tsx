@@ -1,6 +1,7 @@
 import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
+import ExternalLink from "../components/molecules/ExternalLink"
 
 const Credits = () => {
   return (
@@ -20,13 +21,9 @@ const Credits = () => {
           <p>Theme</p>
           <div>
             •{` `}
-            <a
-              href={`https://open.cruip.com`}
-              rel={`noreferrer`}
-              target={`_blank`}
-            >
+            <ExternalLink href={`https://open.cruip.com`} icon={``}>
               open.cruip.com
-            </a>
+            </ExternalLink>
             {` `}•
           </div>
         </Stack>
@@ -34,13 +31,9 @@ const Credits = () => {
           <p>Images</p>
           <div>
             •{` `}
-            <a
-              href={`https://www.pexels.com`}
-              rel={`noreferrer`}
-              target={`_blank`}
-            >
+            <ExternalLink href={`https://www.pexels.com`} icon={``}>
               www.pexels.com
-            </a>
+            </ExternalLink>
             {` `}•
           </div>
         </Stack>

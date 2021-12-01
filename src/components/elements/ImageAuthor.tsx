@@ -1,4 +1,5 @@
 import { ImageDetails } from "../../types"
+import ExternalLink from "../molecules/ExternalLink"
 import Image from "./Image"
 
 const ImageAuthor = ({
@@ -14,17 +15,17 @@ const ImageAuthor = ({
       Photo by
       {` `}
       <strong>
-        <a href={imageDetails.author.link} rel={`noreferrer`} target={`_blank`}>
+        <ExternalLink href={imageDetails.author.link} icon={``}>
           {imageDetails.author.name}
-        </a>
+        </ExternalLink>
       </strong>
       {` `}
       from
       {` `}
       <strong>
-        <a href={imageDetails.link} rel={`noreferrer`} target={`_blank`}>
+        <ExternalLink href={imageDetails.link} icon={``}>
           Pexels
-        </a>
+        </ExternalLink>
       </strong>
     </div>
   </div>

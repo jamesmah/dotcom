@@ -1,6 +1,7 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
 import PageContainer from "../../components/elements/PageContainer"
 import BlockQuote from "../../components/molecules/BlockQuote"
+import ExternalLink from "../../components/molecules/ExternalLink"
 import data from "."
 
 const Page = () => (
@@ -38,17 +39,15 @@ const Page = () => (
     <p>
       To explore further into this topic, here's a good read:
       <br />
-      <a
+      <ExternalLink
         href={`https://www.goodreads.com/book/show/26271987-how-to-be-really-productive`}
-        rel={`noreferrer`}
-        target={`_blank`}
+        icon={`📚`}
       >
-        📚{` `}
         <i>
           How To Be Really Productive: Achieving Clarity and Getting Results in
           a World Where Work Never Ends
         </i>
-      </a>
+      </ExternalLink>
     </p>
     <ImageAuthor {...data} />
   </PageContainer>

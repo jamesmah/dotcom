@@ -1,6 +1,7 @@
 import ImageAuthor from "../../components/elements/ImageAuthor"
 import PageContainer from "../../components/elements/PageContainer"
 import BlockQuote from "../../components/molecules/BlockQuote"
+import ExternalLink from "../../components/molecules/ExternalLink"
 import data from "."
 
 const Page = () => (
@@ -36,13 +37,12 @@ const Page = () => (
       you to trade your productivity for money, but also as a platform to
       develop your experience and achievements as an individual. Use David
       Goggin's cookie jar method (
-      <a
+      <ExternalLink
         href={`https://www.goodreads.com/book/show/41721428-can-t-hurt-me`}
-        rel={`noreferrer`}
-        target={`_blank`}
+        icon={`📚`}
       >
         <i>read more about it in his book 📚</i>
-      </a>
+      </ExternalLink>
       ) and place all your growth and victories in there. Even when feel that
       you might not be receiving the recognition or compensation that you
       deserve, deliberate underperforming not only hurts your employer, but also
