@@ -15,7 +15,6 @@ import NonViolentCommunication from "./NonViolentCommunication"
 import PayYourselfFirst from "./PayYourselfFirst"
 import RememberWhyYouStarted from "./RememberWhyYouStarted"
 import StyledComponentsCssProps from "./StyledComponentsCssProps"
-import The85PercentRule from "./The85PercentRule"
 import TheBiggestMistakeThatYouCanMake from "./TheBiggestMistakeThatYouCanMake"
 import ThereIsntTimeSoBriefIsLife from "./ThereIsntTimeSoBriefIsLife"
 import ThreeBreaksToTakeEveryDay from "./ThreeBreaksToTakeEveryDay"
@@ -28,9 +27,7 @@ import WhenYouFallInLoveWithTheProcess from "./WhenYouFallInLoveWithTheProcess"
 
 export const allDrafts: ArticleData[] = [
   AnyoneCanWorkHard,
-  The85PercentRule,
   NonViolentCommunication,
-  ThreeBreaksToTakeEveryDay,
   GenesDoNotEliminate,
   EverythingAroundYouThatYouCallLife,
   AtomicHabits,
@@ -56,6 +53,7 @@ const allArticles: ArticleData[] = [
   ThreeSecretsOfResilientPeople,
   EffectiveWaysToWindDown,
   MostOfTheMistakeIMade,
+  ThreeBreaksToTakeEveryDay,
 ].sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
 
 export default allArticles

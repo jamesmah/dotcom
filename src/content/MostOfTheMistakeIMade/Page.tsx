@@ -27,9 +27,19 @@ const Page = () => (
     <p>
       Schedule your day so that you make most of your key decisions when you’re
       feeling the most refreshed. Perhaps early in the day before getting other
-      work done, or within a two-hour block after you’ve had your coffee. Take
-      frequent short breaks throughout the day and never burn the midnight oil
-      if you don't have to.
+      work done, or within a two-hour block after you’ve had your coffee.
+    </p>
+    <p>
+      A simple rule to follow is the 85% rule. Aim to only expend 15% less than
+      what you perceive as the total amount of energy you have. Strive to feel
+      like you are performing at a steady pace, always with this tiny bit of
+      room to breathe.
+    </p>
+    <p>
+      Identify what’s essential and trim out the rest without making life
+      difficult for others. Decline invitations to things that aren’t good uses
+      of your time. Take breaks in your day - or in your career. Find ways to
+      remind yourself to simply slow down.
     </p>
     <p>
       The key to success is finding the right balance between intensity, focus,
