@@ -6,6 +6,12 @@ import data from "."
 const Page = () => (
   <PageContainer>
     <BlockQuote {...data} />
+    <ul>
+      <li>Make it obvious</li>
+      <li>Make it attractive</li>
+      <li>Make it easy</li>
+      <li>Make it satisfying</li>
+    </ul>
     <ImageAuthor {...data} />
   </PageContainer>
 )

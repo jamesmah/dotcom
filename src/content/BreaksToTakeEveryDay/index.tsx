@@ -3,10 +3,10 @@ import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  slug: `three-breaks-to-take-every-day`,
+  slug: `breaks-to-take-every-day`,
   timeStamp: new Date(`2021-12-05T11:48:53.206Z`),
   tags: [Tag.Growth],
-  title: `Three Breaks To Take Every Day`,
+  title: `Four Breaks To Take Every Day`,
   quote: ``,
   originator: ``,
   image,
