@@ -95,6 +95,9 @@ const Header = () => {
                 <StyledLink to={`/about#top`}>About</StyledLink>
               </li>
               <li>
+                <StyledLink to={`/projects#top`}>Projects</StyledLink>
+              </li>
+              <li>
                 <StyledLink to={`/credits#top`}>Credits</StyledLink>
               </li>
             </Stack>
