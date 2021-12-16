@@ -1,41 +1,11 @@
 import { ArticleData } from "../types"
-import AnyoneCanWorkHard from "./AnyoneCanWorkHard"
-import AScheduleIsNotAPrison from "./AScheduleIsNotAPrison"
-import BreaksToTakeEveryDay from "./BreaksToTakeEveryDay"
-import EffectiveWaysToWindDown from "./EffectiveWaysToWindDown"
-import EverythingAroundYouThatYouCallLife from "./EverythingAroundYouThatYouCallLife"
-import FreeOnlineTeamBuildingGames from "./FreeOnlineTeamBuildingGames"
-import GenesDoNotEliminate from "./GenesDoNotEliminate"
-import HelloWorld from "./HelloWorld"
-import MostOfTheMistakeIMade from "./MostOfTheMistakeIMade"
-import NonviolentCommunication from "./NonviolentCommunication"
-import RememberWhyYouStarted from "./RememberWhyYouStarted"
-import StyledComponentsCssProps from "./StyledComponentsCssProps"
-import TheBiggestMistakeThatYouCanMake from "./TheBiggestMistakeThatYouCanMake"
-import ThereIsntTimeSoBriefIsLife from "./ThereIsntTimeSoBriefIsLife"
-import ThreeSecretsOfResilientPeople from "./ThreeSecretsOfResilientPeople"
-import TopVsCodeExtensions from "./TopVsCodeExtensions"
 
-export const allDrafts: ArticleData[] = [
-  GenesDoNotEliminate,
-  RememberWhyYouStarted,
-]
+const modules = import.meta.globEager(`./**/index.tsx`)
+const articles: ArticleData[] = Object.values(modules)
+  .map((m) => m.default)
+  .sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
 
-const allArticles: ArticleData[] = [
-  HelloWorld,
-  ThereIsntTimeSoBriefIsLife,
-  TopVsCodeExtensions,
-  AScheduleIsNotAPrison,
-  StyledComponentsCssProps,
-  TheBiggestMistakeThatYouCanMake,
-  FreeOnlineTeamBuildingGames,
-  ThreeSecretsOfResilientPeople,
-  EffectiveWaysToWindDown,
-  MostOfTheMistakeIMade,
-  BreaksToTakeEveryDay,
-  NonviolentCommunication,
-  EverythingAroundYouThatYouCallLife,
-  AnyoneCanWorkHard,
-].sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
+export const allDrafts = articles.filter((a) => a.draft)
+const allArticles = articles.filter((a) => !a.draft)
 
 export default allArticles

@@ -3,6 +3,7 @@ import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
+  draft: true,
   slug: `genes-do-not-eliminate`,
   timeStamp: new Date(`2021-11-07T22:45:51.988Z`),
   tags: [Tag.Quote],
