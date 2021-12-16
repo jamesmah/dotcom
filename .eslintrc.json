@@ -5,15 +5,24 @@
   },
   "extends": [
     "eslint:recommended",
-    "react-app",
-    "react-app/jest",
     "plugin:react/recommended",
-    "plugin:jest-dom/recommended",
-    "plugin:testing-library/react",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "import"],
   "rules": {
-    "@typescript-eslint/no-unused-vars": ["warn"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "@typescript-eslint/quotes": ["warn", "backtick"],
     "import/order": [
       "warn",
@@ -51,5 +60,10 @@
         "ignoreDeclarationSort": true
       }
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

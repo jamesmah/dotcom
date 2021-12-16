@@ -6,7 +6,9 @@ import GlobalStyle from "./GlobalStyle"
 const AppProviders = ({ children }: { children: React.ReactNode }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
-    <BrowserRouter basename={process.env.PUBLIC_URL}>{children}</BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PUBLIC_URL as string}>
+      {children}
+    </BrowserRouter>
   </ThemeProvider>
 )
 
