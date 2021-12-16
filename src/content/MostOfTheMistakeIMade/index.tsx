@@ -10,7 +10,7 @@ const data: ArticleData = {
   quote: (
     <>
       Most of the mistakes I made, I made when I was too tired, because I tried
-      too hard and worked too hard. You make better decisions when you’re not
+      too hard and worked too hard. You make better decisions when you're not
       too tired. So that would be my only advice.
     </>
   ),

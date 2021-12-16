@@ -42,7 +42,7 @@ const Page = () => (
     </p>
     <h4>3. Do what you enjoy</h4>
     <p>
-      Don’t waste your time on leisure activities you don’t enjoy. This might
+      Don't waste your time on leisure activities you don't enjoy. This might
       seem rather obvious but many of us simply conform to societal norms even
       when it comes to having fun. When we think of leisure activities, it would
       be common to go to the movies, have a meal at a restaurant or travel

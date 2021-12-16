@@ -25,9 +25,9 @@ const Page = () => (
       moody and less forgiving towards the people around you.
     </p>
     <p>
-      Schedule your day so that you make most of your key decisions when you’re
+      Schedule your day so that you make most of your key decisions when you're
       feeling the most refreshed. Perhaps early in the day before getting other
-      work done, or within a two-hour block after you’ve had your coffee.
+      work done, or within a two-hour block after you've had your coffee.
     </p>
     <p>
       A simple rule to follow is the 85% rule. Aim to only expend 15% less than
@@ -36,14 +36,14 @@ const Page = () => (
       room to breathe.
     </p>
     <p>
-      Identify what’s essential and trim out the rest without making life
-      difficult for others. Decline invitations to things that aren’t good uses
+      Identify what's essential and trim out the rest without making life
+      difficult for others. Decline invitations to things that aren't good uses
       of your time. Take breaks in your day - or in your career. Find ways to
       remind yourself to simply slow down.
     </p>
     <p>
       The key to success is finding the right balance between intensity, focus,
-      and relaxation. You’ll find that over time you will be achieving way more
+      and relaxation. You'll find that over time you will be achieving way more
       even though you're not trying as hard.
     </p>
     <p>

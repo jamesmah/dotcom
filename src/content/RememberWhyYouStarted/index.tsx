@@ -9,7 +9,7 @@ const data: ArticleData = {
   title: ``,
   quote: (
     <>
-      Remember why you started, remember where you’re headed, think of how great
+      Remember why you started, remember where you're headed, think of how great
       it will be to get there, and keep going.
     </>
   ),

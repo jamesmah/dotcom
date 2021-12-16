@@ -4,7 +4,7 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `everything-around-you-that-you-call-life`,
-  timeStamp: new Date(`2021-11-07T22:45:51.988Z`),
+  timeStamp: new Date(`2021-12-16T08:58:06.831Z`),
   tags: [Tag.Quote],
   title: ``,
   quote: (

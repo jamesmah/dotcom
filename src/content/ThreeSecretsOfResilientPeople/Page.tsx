@@ -36,7 +36,7 @@ const Page = () => (
       things that you can't.
     </p>
     <h4>
-      3. Resilient people ask themselves is what I’m doing helping or harming me
+      3. Resilient people ask themselves is what I'm doing helping or harming me
     </h4>
     <p>
       Ask yourself whether what you're doing, the way you're thinking, the way

@@ -3,10 +3,10 @@ import { ArticleData, Tag } from "../../types"
 import image from "./image.jpg"
 
 const data: ArticleData = {
-  slug: `non-violent-communication`,
-  timeStamp: new Date(`2021-11-07T00:18:15.792Z`),
+  slug: `nonviolent-communication`,
+  timeStamp: new Date(`2021-12-16T08:47:09.763Z`),
   tags: [Tag.Growth],
-  title: `Non Violent Communication`,
+  title: `Nonviolent Communication`,
   quote: ``,
   originator: `Marshall B. Rosenberg`,
   image,

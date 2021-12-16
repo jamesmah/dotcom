@@ -8,7 +8,7 @@ const Page = () => (
     <BlockQuote {...data} />
     <p>
       Try coming up with not one, not two, but seven reasons why you want to
-      accomplish your goal. And like always, don’t just think about it - write
+      accomplish your goal. And like always, don't just think about it - write
       it down!
     </p>
     <ImageAuthor {...data} />

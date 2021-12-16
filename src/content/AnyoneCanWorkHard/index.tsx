@@ -4,7 +4,7 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `anyone-can-work-hard-when-they-feel-motivated`,
-  timeStamp: new Date(`2021-11-06T00:59:12.773Z`),
+  timeStamp: new Date(`2021-12-16T09:41:09.133Z`),
   tags: [Tag.Quote],
   title: ``,
   quote: (

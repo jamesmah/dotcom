@@ -8,8 +8,7 @@ import FreeOnlineTeamBuildingGames from "./FreeOnlineTeamBuildingGames"
 import GenesDoNotEliminate from "./GenesDoNotEliminate"
 import HelloWorld from "./HelloWorld"
 import MostOfTheMistakeIMade from "./MostOfTheMistakeIMade"
-import NonViolentCommunication from "./NonViolentCommunication"
-import PayYourselfFirst from "./PayYourselfFirst"
+import NonviolentCommunication from "./NonviolentCommunication"
 import RememberWhyYouStarted from "./RememberWhyYouStarted"
 import StyledComponentsCssProps from "./StyledComponentsCssProps"
 import TheBiggestMistakeThatYouCanMake from "./TheBiggestMistakeThatYouCanMake"
@@ -18,11 +17,7 @@ import ThreeSecretsOfResilientPeople from "./ThreeSecretsOfResilientPeople"
 import TopVsCodeExtensions from "./TopVsCodeExtensions"
 
 export const allDrafts: ArticleData[] = [
-  AnyoneCanWorkHard,
-  NonViolentCommunication,
   GenesDoNotEliminate,
-  EverythingAroundYouThatYouCallLife,
-  PayYourselfFirst,
   RememberWhyYouStarted,
 ]
 
@@ -38,6 +33,9 @@ const allArticles: ArticleData[] = [
   EffectiveWaysToWindDown,
   MostOfTheMistakeIMade,
   BreaksToTakeEveryDay,
+  NonviolentCommunication,
+  EverythingAroundYouThatYouCallLife,
+  AnyoneCanWorkHard,
 ].sort((a, b) => b.timeStamp.getTime() - a.timeStamp.getTime())
 
 export default allArticles
