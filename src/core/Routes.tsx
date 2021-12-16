@@ -15,7 +15,7 @@ const Routes = () => {
   const history = useHistory()
 
   useEffect(() => {
-    if (import.meta.env.NODE_ENV === `production`) {
+    if (import.meta.env.PROD) {
       ReactGA.pageview(location.pathname + location.search)
     }
   }, [location])
