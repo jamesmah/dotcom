@@ -1,0 +1,1 @@
+import{j as e,_ as o}from"./vendor.1491be31.js";import{C as n}from"./index.ecf8f984.js";const a=()=>e(t,{children:e("h1",{"data-aos":"fade-up",children:"Coming Soon..."})});var t=o(n).withConfig({componentId:"sc-1ykfzee-0"})(["flex-grow:1;display:flex;flex-direction:column;justify-content:center;text-align:center;padding-bottom:5rem;"]);export{a as default};
