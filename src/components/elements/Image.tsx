@@ -6,7 +6,6 @@ import Loader from "./Loader"
 const Image = ({
   src,
   placeholderAspectRatio = `3 / 2`,
-  ...props
 }: {
   src: string
   placeholderAspectRatio?: string
@@ -52,7 +51,6 @@ const Image = ({
       )}
       {imageLoaded && (
         <img
-          {...props}
           css={`
             width: 100%;
           `}

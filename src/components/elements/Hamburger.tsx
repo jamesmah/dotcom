@@ -4,26 +4,12 @@ import classNames from "classnames"
 const Hamburger = ({
   toggleIsActive,
   isActive,
-  ...props
 }: {
   toggleIsActive: () => void
   isActive: boolean
 } & React.HTMLProps<HTMLButtonElement>) => (
   <button
-    {...props}
-    className={classNames(
-      `hamburger hamburger--collapse`,
-      isActive && `is-active`,
-      props.className
-    )}
-    css={`
-      padding: 0.5rem;
-      margin: -0.5rem;
-
-      :hover {
-        opacity: 0.6 !important;
-      }
-    `}
+    className={classNames(`hamburger`, isActive && `is-active`)}
     onClick={toggleIsActive}
     type={`button`}
   >
