@@ -6,6 +6,7 @@ import Checker from "vite-plugin-checker"
 export default defineConfig({
   plugins: [
     react({
+      fastRefresh: process.env.NODE_ENV !== `test`,
       babel: {
         plugins: [
           [
@@ -17,6 +18,6 @@ export default defineConfig({
         ],
       },
     }),
-    Checker({ typescript: true }),
+    process.env.NODE_ENV !== `test` ? Checker({ typescript: true }) : undefined,
   ],
 })

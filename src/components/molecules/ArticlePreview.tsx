@@ -6,7 +6,7 @@ import Stack from "../elements/Stack"
 import TagPills from "./TagPills"
 
 const ArticlePreview = ({ article }: { article: ArticleData }) => (
-  <Stack data-aos={`fade`} gap={`0.5rem`} id={article.slug}>
+  <Stack data-aos={`fade`} gap={`0.5rem`}>
     <div
       css={`
         display: flex;
