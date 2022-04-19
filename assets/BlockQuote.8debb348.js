@@ -1,0 +1,1 @@
+import{_ as o,b as t,j as s}from"./vendor.17de887c.js";const d=({quote:a,originator:e})=>t("blockquote",{"data-aos":"fade-right",children:[s("q",{children:a}),s(n,{children:e&&` - ${e}`})]});var n=o("span").withConfig({componentId:"sc-1ntv5kk-0"})(["white-space:nowrap;"]);export{d as B};
