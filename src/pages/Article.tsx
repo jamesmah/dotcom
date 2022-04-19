@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { RouteComponentProps } from "react-router"
+import { RouteComponentProps } from "react-router-dom"
 import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
