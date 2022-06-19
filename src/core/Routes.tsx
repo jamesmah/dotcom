@@ -34,7 +34,6 @@ const Routes = () => {
       <Route component={Drafts} exact path={`/drafts`} />
       <Route component={Quotes} exact path={`/quotes`} />
       <Route component={ComingSoon} exact path={`/about`} />
-      <Route component={ComingSoon} exact path={`/projects`} />
       <Route component={Credits} exact path={`/credits`} />
       <Route component={Article} exact path={`/:id`} />
       <Route component={PageNotFound} />
