@@ -46,10 +46,10 @@ const Page = () => (
     </ul>
     <p>
       Instead of putting goals at the forefront, focus on a system or routine.
-      Goals can be useful when used correctly, but realise that focusing on the
-      present is usually more beneficial than focusing on the future.
-      Circumstances change frequently and so will our goals, and in many ways
-      our journeys shape our goals rather than the other way around.
+      Goals can be useful when used correctly, but focusing on the present is
+      usually more beneficial than focusing on the future. Circumstances change
+      frequently and so will our goals, and in many ways our journeys shape our
+      goals rather than the other way around.
     </p>
     <br />
     <ExternalLink
