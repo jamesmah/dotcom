@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import Quote from "../components/molecules/Quote"
-import allArticles from "../content/allArticles"
+import { allArticles } from "../content/allArticles"
 import { Tag } from "../types"
 
 const Quotes = () => {

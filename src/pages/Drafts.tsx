@@ -3,7 +3,7 @@ import { RouteComponentProps } from "react-router-dom"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import ArticlePreview from "../components/molecules/ArticlePreview"
-import { allDrafts } from "../content/allArticles"
+import { allDrafts } from "../drafts/allDrafts"
 
 const Drafts = ({ location }: RouteComponentProps) => (
   <Container

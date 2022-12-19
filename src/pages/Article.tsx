@@ -5,7 +5,8 @@ import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import BackHeader from "../components/molecules/BackHeader"
 import TagPills from "../components/molecules/TagPills"
-import allArticles, { allDrafts } from "../content/allArticles"
+import { allArticles } from "../content/allArticles"
+import { allDrafts } from "../drafts/allDrafts"
 import PageNotFound from "./PageNotFound"
 
 const Article = ({ match }: RouteComponentProps<{ id: string }>) => {

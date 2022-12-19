@@ -16,7 +16,6 @@ export interface ImageDetails {
 }
 
 export interface ArticleData {
-  draft?: boolean
   slug: string
   timeStamp: Date
   tags: Tag[]

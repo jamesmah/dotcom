@@ -5,7 +5,7 @@ import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import ArticlePreview from "../components/molecules/ArticlePreview"
-import allArticles from "../content/allArticles"
+import { allArticles } from "../content/allArticles"
 import { Tag } from "../types"
 import { fadeLeftAnimation } from "../utils/keyframes"
 
