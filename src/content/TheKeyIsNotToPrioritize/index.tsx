@@ -4,7 +4,7 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `the-key-is-not-to-prioritize`,
-  timeStamp: new Date(`2022-12-19T08:27:13.202Z`),
+  timeStamp: new Date(`2023-01-14T01:17:24.018Z`),
   tags: [Tag.Quote],
   title: ``,
   quote: (
