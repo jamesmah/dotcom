@@ -5,7 +5,7 @@ import data from "."
 
 const Page = () => (
   <PageContainer>
-    <BlockQuote {...data} quote={<>{data.quote}</>} />
+    <BlockQuote {...data} />
     <ImageAuthor {...data} />
   </PageContainer>
 )

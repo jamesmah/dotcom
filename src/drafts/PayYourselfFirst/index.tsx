@@ -4,11 +4,11 @@ import image from "./image.jpg"
 
 const data: ArticleData = {
   slug: `pay-yourself-first`,
-  timeStamp: new Date(`2022-12-19T08:27:13.202Z`),
+  timeStamp: new Date(`2023-01-19T08:11:19.422Z`),
   tags: [Tag.Growth],
   title: `Pay yourself first.`,
   quote: ``,
-  originator: `Unknown`,
+  originator: ``,
   image,
   imageDetails: {
     author: {
