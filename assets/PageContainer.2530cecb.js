@@ -1,0 +1,1 @@
+import{_ as t,f as e,j as n,S as o}from"./index.51a0d261.js";const m=({children:a})=>n(s,{gap:"1rem",children:a});var s=t(o).withConfig({componentId:"sc-1gt456-0"})(["padding-top:1rem;animation:"," 1s ease;"],e);export{m as P};
