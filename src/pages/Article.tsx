@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 import { RouteComponentProps } from "react-router-dom"
-import { css } from "styled-components"
+// import { css } from "styled-components"
 import Container from "../components/elements/Container"
 import Stack from "../components/elements/Stack"
 import BackHeader from "../components/molecules/BackHeader"
@@ -27,14 +27,14 @@ const Article = ({ match }: RouteComponentProps<{ id: string }>) => {
               justify-content: space-between;
             `}
           >
-            <div
+            {/* <div
               css={css`
                 color: ${({ theme }) => theme.palette.light[2]};
               `}
               data-aos={`fade`}
             >
               {article.timeStamp.toDateString()}
-            </div>
+            </div> */}
             <TagPills tags={article.tags} />
           </div>
           {article.title && <h3 data-aos={`fade`}>{article.title}</h3>}

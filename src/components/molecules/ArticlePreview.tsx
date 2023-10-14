@@ -13,13 +13,13 @@ const ArticlePreview = ({ article }: { article: ArticleData }) => (
         justify-content: space-between;
       `}
     >
-      <div
+      {/* <div
         css={css`
           color: ${({ theme }) => theme.palette.light[2]};
         `}
       >
         {article.timeStamp.toDateString()}
-      </div>
+      </div> */}
       <TagPills tags={article.tags} />
     </div>
     {article.title && (
