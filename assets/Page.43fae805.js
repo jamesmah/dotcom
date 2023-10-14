@@ -1,0 +1,1 @@
+import{I as o}from"./ImageAuthor.b14c09cb.js";import{P as t}from"./PageContainer.467a5aee.js";import{a as e,j as a,n as r}from"./index.fd2192e6.js";import"./ExternalLink.2c6f84d8.js";const n=()=>e(t,{children:[a("p",{children:r.excerpt}),a(o,{...r})]});export{n as default};

@@ -1,0 +1,1 @@
+import{I as r}from"./ImageAuthor.b14c09cb.js";import{P as t}from"./PageContainer.467a5aee.js";import{B as s}from"./BlockQuote.90820207.js";import{a as m,j as o,o as a}from"./index.fd2192e6.js";import"./ExternalLink.2c6f84d8.js";const c=()=>m(t,{children:[o(s,{...a}),o(r,{...a})]});export{c as default};
